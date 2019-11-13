@@ -24,7 +24,9 @@
   width: 75px;
   height: 22px;
 
-  background: url("../img/logotype-white-mobile.svg") 0 0 no-repeat;
+  background-image: url("../img/logotype-white-mobile.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -39,6 +41,8 @@
   background-color: #ffffff;
   border: none;
 
+  cursor: pointer;
+
   &::before,
   &::after {
     content: "";
@@ -52,8 +56,21 @@
 
     background-color: #ffffff;
   }
+
   &::after {
     top: 10px;
+  }
+
+  &:hover,
+  &:hover::before,
+  &:hover::after {
+    background-color: $color-hover;
+  }
+
+  &:active,
+  &:active::before,
+  &:active::after {
+    background-color: rgba($color-hover, 0.3);
   }
 }
 
@@ -69,11 +86,14 @@
 
   background-color: transparent;
   border: none;
+  &:hover {
+    background-image: url("../img/cross-button-hover.svg");
+  }
+  &:active {
+    background-image: url("../img/cross-button-hover.svg");
+    opacity: 0.3;
+  }
 }
-
-
-
-
 
 .main-nav {
   width: auto;
@@ -87,7 +107,7 @@
   text-align: center;
 }
 
-.site-list__item a {
+.site-list__link {
   display: block;
   padding: 16px 0;
 
@@ -100,6 +120,18 @@
   background-color: $color-blue-dark;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
               0 1px 0 #000000;
+  &:hover {
+    color: $color-hover;
+  }
+  &--active:hover {
+    color: #ffffff;
+  }
+  &:active {
+    color: rgba($color-hover, 0.3);
+  }
+  &--active:active {
+    color: #ffffff;
+  }
 }
 
 @media (min-width: 660px) {
@@ -117,8 +149,7 @@
     width: 147px;
     height: 40px;
 
-    background: url("../img/logotype-white-tablet.svg") 0 0 no-repeat;
-    background-size: cover;
+    background-image: url("../img/logotype-white-tablet.svg");
   }
 }
 
@@ -140,8 +171,16 @@
     width: 147px;
     height: 40px;
 
-    background: url("../img/logotype-white-desktop.svg") 0 0 no-repeat;
-    background-size: cover;
+    background-image: url("../img/logotype-white-desktop.svg");
+  }
+
+  .page-header__logo:hover {
+    background-image: url("../img/logotype-pink-desktop.svg");
+
+  }
+  .page-header__logo:active {
+    background-image: url("../img/logotype-white-desktop.svg");
+    opacity: 0.3;
   }
 
   .main_nav__toggle-button {
@@ -162,7 +201,7 @@
     background-color: rgba(#000000, 0.3);
   }
 
-  .site-list__item a {
+  .site-list__link {
     display: block;
     padding: 16px 0;
 
@@ -182,7 +221,7 @@
     justify-content: space-between;
   }
 
-  .site-list__item a {
+  .site-list__link {
     display: block;
     padding: 46px 0;
 
@@ -192,5 +231,13 @@
 
     background-color: transparent;
     box-shadow: none;
+  }
+
+  .site-list__link:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .site-list__item--active {
+    background-image: linear-gradient(to bottom, transparent 75px, #ffffff 75px, #ffffff 77px, transparent 77px);
   }
 }
