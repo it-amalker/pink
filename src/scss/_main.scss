@@ -1,11 +1,10 @@
 .page-header {
   display: block;
-  min-height: 992px;
 
   background-image: url("../img/bg_mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: top;
 }
 
 .page-header__logo-wrap {
@@ -13,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
 
-  height: 70px;
+  height: 66px;
   padding: 0 20px;
 
   background-color: rgba(#000000, 0.3);
@@ -96,6 +95,7 @@
 }
 
 .main-nav {
+  display: none;
   width: auto;
 }
 
@@ -136,9 +136,9 @@
 
 @media (min-width: 660px) {
   .page-header {
-    min-height: 984px;
-
     background-image: url("../img/bg_tablet.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
   .page-header__logo-wrap {
@@ -155,9 +155,11 @@
 
 @media (min-width: 1200px) {
   .page-header {
-    min-height: 984px;
+    background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px), url("../img/bg_desktop.png");
+  }
 
-    background-image: url("../img/bg_desktop.png");
+  .page-header__wrapper {
+    @include container-desktop;
   }
 
   .page-header__logo-wrap {
@@ -183,6 +185,10 @@
     opacity: 0.3;
   }
 
+  .main-nav {
+    display: block;
+  }
+
   .main_nav__toggle-button {
     &--open,
     &--close {
@@ -197,8 +203,6 @@
   .page-header__nav-wrap {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px;
-    background-color: rgba(#000000, 0.3);
   }
 
   .site-list__link {
@@ -239,5 +243,170 @@
 
   .site-list__item--active {
     background-image: linear-gradient(to bottom, transparent 75px, #ffffff 75px, #ffffff 77px, transparent 77px);
+  }
+}
+
+
+
+// HEADER PROMO BLOCK /////
+
+
+
+.page-header__promo {
+  min-height: 212px;
+  margin-top: 396px;
+  padding: 28px 20px 31px 20px;
+}
+
+.promo-apps {
+  background-color: #1d2631;
+}
+
+.promo-apps__slogan {
+  display: none;
+  margin: 0;
+}
+
+.promo-apps__button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding: 16px 0;
+
+  box-sizing: border-box;
+
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  &:hover {
+    color: $color-hover;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba($color-hover, 0.3);
+    background-color: #ffffff;
+  }
+}
+
+.apps-list__item-name {
+  @include visually-hidden;
+}
+
+.promo-apps__list {
+  @include reset-list;
+
+  display: block;
+  margin-bottom: 17px;
+  padding: 0 37px;
+
+  text-align: center;
+}
+
+.apps-list__item {
+  display: inline-block;
+  margin-right: 31px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.apps-list__link {
+  display: block;
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background: url("../img/apple-icon.svg") center no-repeat;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background: url("../img/android-icon.svg") center no-repeat;
+  }
+
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background: url("../img/microsoft-icon.svg") center no-repeat;
+  }
+}
+
+.promo-apps__info {
+  margin: 0;
+
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 660px) {
+  .page-header__promo {
+    width: 300px;
+    margin: 0;
+    padding: 96px 20px 105px 20px;
+  }
+
+  .promo-apps__slogan {
+    display: block;
+    max-width: 190px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+    font-size: 40px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .promo-apps {
+    background-color: transparent;
+  }
+
+  .promo-apps__button {
+    margin-bottom: 46px;
+  }
+
+  .promo-apps__list {
+    margin-bottom: 31px;
+    padding: 0 27px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header__promo {
+    width: 300px;
+    margin: 0;
+    padding: 111px 0 112px 0;
+  }
+
+  .promo-apps__slogan {
+    display: block;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .promo-apps__button {
+    margin-bottom: 67px;
+  }
+
+  .promo-apps__list {
+    margin-bottom: 61px;
+    padding: 0 43px;
   }
 }
