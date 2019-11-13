@@ -1,0 +1,30 @@
+{
+  "name": "pink",
+  "version": "0.1.1",
+  "description": "Pink website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/it-amalker/pink.git"
+  },
+  "author": "amalker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/it-amalker/pink/issues"
+  },
+  "homepage": "https://github.com/it-amalker/pink#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1"
+  }
+}
