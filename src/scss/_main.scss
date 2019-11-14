@@ -764,14 +764,15 @@
     position: relative;
 
     display: block;
-    width: 940px;
-    margin: 0 auto;
-    padding: 159px 10px 113px 10px;
+    padding: 159px 0 113px 0;
+
+    background: #f2f2f2;
   }
 
   .research-feature__wrap {
     width: 570px;
     padding-left: 370px;
+    margin: 0 auto;
 
     &::before {
       top: -94px;
@@ -806,4 +807,239 @@
     font-size: 18px;
     line-height: 30px;
   }
+}
+
+
+
+
+// MAIN-PAGE REVIEWS BLOCK /////
+
+
+.reviews {
+  position: relative;
+}
+
+.reviews__wrapper {
+  padding-top: 43px;
+  padding-bottom: 87px;
+}
+
+.reviews__title {
+  @include visually-hidden;
+}
+
+.review__item {
+  margin: 0;
+}
+
+.review__author-name {
+  display: block;
+  margin: 0 auto ;
+
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+.review__text {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-blue-dark;
+  text-align: center;
+}
+
+.review__author-info {
+  display: none;
+}
+
+.reviews__toggles {
+  @include reset-list;
+
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+
+  display: block;
+  width: 65px;
+  margin-left: -32px;
+}
+
+.slider-toggles__item {
+  display: inline-block;
+  width: 15px;
+}
+
+.slider-toggles__switch {
+  display: block;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+
+  background-color: rgba($color-blue-dark, 0.3);
+
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba($color-blue-dark, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color-blue-dark, 0.1);
+  }
+
+  &--active,
+  &--active:hover,
+  &--active:active {
+    background-color: #ffffff;
+    border: 3px solid $color-blue-dark;
+  }
+}
+
+.reviews__arrow-toggles {
+  display: none;
+}
+
+.hidden__text {
+  @include visually-hidden;
+}
+
+@media (min-width: $media-mobile-max) {
+  .reviews__wrapper {
+    padding-top: 100px;
+    padding-bottom: 66px;
+  }
+
+  .review__item {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .review__author-name {
+    order: 2;
+    padding-bottom: 3px;
+
+    font-size: 20px;
+  }
+
+  .review__text {
+    order: 1;
+    max-width: 620px;
+    padding-bottom: 34px;
+
+    font-size: 18px;
+  }
+
+  .review__author-info {
+    display: block;
+    margin: 0;
+    order: 3;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-blue-dark;
+    text-align: center;
+  }
+
+  .reviews__toggles {
+    bottom: 21px;
+  }
+}
+
+@media (min-width: $media-tablet-max) {
+  .reviews__wrapper {
+    padding-top: 186px;
+    padding-bottom: 41px;
+  }
+
+  .review__author-name {
+    padding-bottom: 3px;
+
+    font-size: 24px;
+  }
+
+  .review__text {
+    max-width: 690px;
+    padding-bottom: 35px;
+  }
+
+  .review__author-info {
+    font-size: 18px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+
+  .hidden__arrows-text {
+    @include visually-hidden;
+  }
+
+  .reviews__arrow-toggles {
+    @include reset-list;
+    position: relative;
+
+    display: block;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .slider-arrows__switch {
+    position: absolute;
+    top: -153px;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+
+    border: 3px solid rgba($color-blue-dark, 0.3);
+
+    cursor: pointer;
+
+    &--next {
+      right: 0;
+      border-left-color: transparent;
+      border-top-color: transparent;
+
+      transform: rotate(-45deg);
+    }
+
+    &--back {
+      left: 0;
+      border-right-color: transparent;
+      border-top-color: transparent;
+
+      transform: rotate(45deg);
+    }
+
+    &--next:hover {
+      border-right-color: rgba($color-blue-dark, 0.6);
+      border-bottom-color: rgba($color-blue-dark, 0.6);
+    }
+
+    &--back:hover {
+      border-left-color: rgba($color-blue-dark, 0.6);
+      border-bottom-color: rgba($color-blue-dark, 0.6);
+    }
+
+    &--next:active {
+      border-right-color: rgba($color-blue-dark, 0.1);
+      border-bottom-color: rgba($color-blue-dark, 0.1);
+    }
+
+    &--back:active {
+      border-left-color: rgba($color-blue-dark, 0.1);
+      border-bottom-color: rgba($color-blue-dark, 0.1);
+    }
+
+  }
+
+
 }
