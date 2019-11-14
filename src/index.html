@@ -114,71 +114,98 @@
     </section>
     <section class="prices">
       <div class="prices__wrapper slider">
-        <h2 class="visually-hidden">Тарифные планы</h2>
+        <h2 class="prices__title">Тарифные планы</h2>
         <ul class="prices__list tarriffs-list slider__list">
-          <li class="tarrif__item slider__item">
-            <h3 class="tarrif__title">Стандарт</h3>
-            <b class="tarrif__cost">3,99 USD</b>
-            <table class="tarrif__table">
+          <li class="tarrif__item tarrif__item--titles">
+            <table class="tarrif__table tarrif__table--titles">
               <tr>
-                <td class="tarrif__feature">Розовый фильтр</td>
-                <td class="tarrif__availability">Есть</td>
+                <td class="tarrif__feature--titles">Розовый фильтр</td>
               </tr>
               <tr>
-                <td class="tarrif__feature">Смайлики</td>
-                <td class="tarrif__availability">Нет</td>
+                <td class="tarrif__feature--titles">Смайлики</td>
               </tr>
               <tr>
-                <td class="tarrif__feature">Комментарии</td>
-                <td class="tarrif__availability">Нет</td>
+                <td class="tarrif__feature--titles">Комментарии</td>
               </tr>
             </table>
-            <span class="prices__hit"></span>
+            <span class="prices__hit prices__hit--active"></span>
           </li>
-          <li class="tarrif__item slider__item">
+          <li class="tarrif__item slider__item tarrif__item--base">
             <h3 class="tarrif__title">База</h3>
             <b class="tarrif__cost">1,99 USD</b>
             <table class="tarrif__table">
               <tr>
                 <td class="tarrif__feature">Розовый фильтр</td>
-                <td class="tarrif__availability">Есть</td>
+                <td class="tarrif__availability tarrif__availability--yes"><span
+                    class="tarrif__available-text">Есть</span></td>
               </tr>
               <tr>
                 <td class="tarrif__feature">Смайлики</td>
-                <td class="tarrif__availability">Есть</td>
+                <td class="tarrif__availability tarrif__availability--no"><span
+                    class="tarrif__available-text">Нет</span></td>
               </tr>
               <tr>
                 <td class="tarrif__feature">Комментарии</td>
-                <td class="tarrif__availability">Нет</td>
+                <td class="tarrif__availability tarrif__availability--no"><span
+                    class="tarrif__available-text">Нет</span></td>
               </tr>
             </table>
-            <span class="prices__hit prices__hit--active"></span>
           </li>
-          <li class="tarrif__item slider__item">
+          <li
+            class="tarrif__item tarrif__item--base slider__item tarrif__item--hit slider__item--active tarrif__item--standard">
+            <h3 class="tarrif__title">Стандарт</h3>
+            <b class="tarrif__cost">3,99 USD</b>
+            <table class="tarrif__table">
+              <tr>
+                <td class="tarrif__feature">Розовый фильтр</td>
+                <td class="tarrif__availability tarrif__availability--yes"><span
+                    class="tarrif__available-text">Есть</span></td>
+              </tr>
+              <tr>
+                <td class="tarrif__feature">Смайлики</td>
+                <td class="tarrif__availability tarrif__availability--yes"><span
+                    class="tarrif__available-text">Есть</span></td>
+              </tr>
+              <tr>
+                <td class="tarrif__feature">Комментарии</td>
+                <td class="tarrif__availability tarrif__availability--no"><span
+                    class="tarrif__available-text">Нет</span></td>
+              </tr>
+            </table>
+          </li>
+          <li class="tarrif__item slider__item tarrif__item--unlim">
             <h3 class="tarrif__title">Анлим</h3>
             <b class="tarrif__cost">9,99 USD</b>
             <table class="tarrif__table">
               <tr>
                 <td class="tarrif__feature">Розовый фильтр</td>
-                <td class="tarrif__availability">Есть</td>
+                <td class="tarrif__availability tarrif__availability--yes"><span
+                    class="tarrif__available-text">Есть</span></td>
               </tr>
               <tr>
                 <td class="tarrif__feature">Смайлики</td>
-                <td class="tarrif__availability">Есть</td>
+                <td class="tarrif__availability tarrif__availability--yes"><span
+                    class="tarrif__available-text">Есть</span></td>
               </tr>
               <tr>
                 <td class="tarrif__feature">Комментарии</td>
-                <td class="tarrif__availability">Есть</td>
+                <td class="tarrif__availability tarrif__availability--yes"><span
+                    class="tarrif__available-text">Есть</span></td>
               </tr>
             </table>
-            <span class="prices__hit"></span>
           </li>
         </ul>
-        <p class="prices__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <ul class="prices__toggles prices-toggles">
+          <li class="prices-toggles__item"><a href="#" class="prices-toggles__switch"><span
+                class="prices-hidden__text">Первый
+                тариф</span></a></li>
+          <li class="prices-toggles__item"><a href="#"
+              class="prices-toggles__switch prices-toggles__switch--active"><span class="prices-hidden__text">Второй
+                тариф</span></a></li>
+          <li class="prices-toggles__item"><a href="#" class="prices-toggles__switch"><span
+                class="prices-hidden__text">Третий
+                тариф</span></a></li>
+        </ul>
       </div>
     </section>
     <section class="contacts">
