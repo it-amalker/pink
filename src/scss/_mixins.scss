@@ -23,10 +23,16 @@
   list-style: none;
 }
 
-@mixin container {
-  width: 320px;
+@mixin container-mobile {
+  width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
+}
+
+@mixin container-tablet {
+  width: 620px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 @mixin container-desktop {

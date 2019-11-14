@@ -348,7 +348,7 @@ body {
 
 .page-header {
   display: block;
-  background-image: url("../img/bg_mobile.png");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg_mobile.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top;
@@ -358,9 +358,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 66px;
   padding: 0 20px;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 66px;
 }
 
 .page-header__logo {
@@ -470,12 +469,18 @@ body {
 
 @media (min-width: 660px) {
   .page-header {
-    background-image: url("../img/bg_tablet.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg_tablet.jpg");
     background-size: cover;
     background-position: center;
   }
+  .page-header__wrapper {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
   .page-header__logo-wrap {
     min-height: 110px;
+    background-color: transparent;
   }
   .page-header__logo {
     width: 147px;
@@ -572,7 +577,7 @@ body {
 
 .promo-apps__button {
   display: block;
-  width: 100%;
+  max-width: 280px;
   margin: 0 auto;
   margin-bottom: 33px;
   padding: 16px 0;
@@ -652,7 +657,8 @@ body {
 }
 
 .promo-apps__info {
-  margin: 0;
+  max-width: 280px;
+  margin: 0 auto;
   font-size: 14px;
   color: #ffffff;
   font-weight: 300;
@@ -663,7 +669,7 @@ body {
   .page-header__promo {
     width: 300px;
     margin: 0;
-    padding: 96px 20px 105px 20px;
+    padding: 96px 0 105px 0;
   }
   .promo-apps__slogan {
     display: block;
@@ -838,19 +844,26 @@ body {
     height: 50px;
   }
   .features__wrap::after {
-    top: 0;
-    left: 100px;
+    background: none;
+  }
+  .features__list {
+    position: relative;
+    display: block;
+    width: 310px;
+    margin: 0 auto;
+    padding-left: 310px;
+  }
+  .features__list::after {
+    content: "";
+    position: absolute;
+    top: -68px;
+    left: 0;
     width: 265px;
     height: 547px;
     background-image: url("../img/features-phone.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  .features__list {
-    display: block;
-    width: 310px;
-    margin-left: auto;
   }
   .feature__title {
     padding-bottom: 13px;
@@ -863,25 +876,26 @@ body {
     text-align: left;
   }
   .feature__research {
-    position: relative;
     display: block;
     padding: 96px 20px 125px 20px;
   }
-  .feature__research::before {
+  .research-feature__wrap {
+    position: relative;
+    width: 310px;
+    margin: 0 auto;
+    padding-left: 310px;
+  }
+  .research-feature__wrap::before {
     content: "";
     position: absolute;
-    top: 59px;
-    left: 20px;
+    top: -37px;
+    left: 0;
     width: 239px;
     height: 276px;
     background-image: url("../img/research-icon.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
-  }
-  .research-feature__wrap {
-    width: 310px;
-    margin-left: auto;
   }
   .research-feature__title {
     max-width: 122px;
@@ -921,21 +935,21 @@ body {
     padding-top: 0;
   }
   .features__wrap {
-    padding-top: 298px;
-    padding-bottom: 0;
+    padding: 298px 0 0 0;
     overflow: visible;
   }
   .features__wrap::before {
     height: 92px;
-  }
-  .features__wrap::after {
-    background: none;
   }
   .features__list {
     display: flex;
     justify-content: space-between;
     width: 940px;
     margin: auto;
+    padding: 0 10px;
+  }
+  .features__list::after {
+    background: none;
   }
   .feature__item {
     position: relative;
@@ -997,19 +1011,15 @@ body {
     margin: 0 auto;
     padding: 159px 10px 113px 10px;
   }
-  .feature__research::before {
-    top: 65px;
-    left: 10px;
-    width: 300px;
-    height: 345px;
-    background-image: url("../img/research-icon.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-  }
   .research-feature__wrap {
     width: 570px;
-    margin-left: auto;
+    padding-left: 370px;
+  }
+  .research-feature__wrap::before {
+    top: -94px;
+    left: 0;
+    width: 300px;
+    height: 345px;
   }
   .research-feature__title {
     max-width: 550px;
