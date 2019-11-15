@@ -1718,6 +1718,19 @@ body {
   font-weight: 300;
 }
 
+.contact__info-link {
+  color: #d22856;
+  text-decoration: none;
+}
+
+.contact__info-link:hover {
+  color: #283645;
+}
+
+.contact__info-link:active {
+  color: rgba(40, 54, 69, 0.3);
+}
+
 .contacts__map {
   position: relative;
   width: 100%;
@@ -1838,5 +1851,176 @@ body {
   }
   .contacts__map::after {
     height: 104px;
+  }
+}
+
+.page-footer {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-footer {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+  .page-footer__logo {
+    display: block;
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/logotype-footer-pink-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .page-footer__logo:hover {
+    background-image: url("../img/logotype-footer-pink-tablet-hover.svg");
+  }
+  .page-footer__logo:active {
+    background-image: url("../img/logotype-footer-pink-tablet.svg");
+    opacity: 0.3;
+  }
+  .footer-social__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+  }
+  .social__item {
+    margin-right: 12px;
+  }
+  .social__item:last-child {
+    margin-right: 0;
+  }
+  .social__item-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .social__link {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    border-radius: 50%;
+  }
+  .social__link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .social__link--twitter::before {
+    width: 18px;
+    height: 14px;
+    margin-top: -7px;
+    margin-left: -9px;
+    background-image: url("../img/social-twitter.svg");
+  }
+  .social__link--facebook::before {
+    width: 9px;
+    height: 18px;
+    margin-top: -9px;
+    margin-left: -4px;
+    background-image: url("../img/social-facebook.svg");
+  }
+  .social__link--youtube::before {
+    width: 15px;
+    height: 13px;
+    margin-top: -6px;
+    margin-left: -7px;
+    background-image: url("../img/social-youtube.svg");
+  }
+  .social__link:hover {
+    border-color: #283645;
+  }
+  .social__link:active {
+    border-color: rgba(40, 54, 69, 0.1);
+  }
+  .social__link:active::before {
+    opacity: 0.1;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
+  .copyright__text {
+    margin-right: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283645;
+    font-weight: normal;
+  }
+  .copyright__logo-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .copyright__logo {
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/html-academy-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .copyright__logo:hover {
+    background-image: url("../img/html-academy-logo-hover.svg");
+  }
+  .copyright__logo:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    padding-top: 70px;
+    padding-bottom: 72px;
+  }
+  .page-footer__logo {
+    background-image: url("../img/logotype-footer-pink-desktop.svg");
+  }
+  .page-footer__logo:hover {
+    background-image: url("../img/logotype-footer-pink-desktop-hover.svg");
+  }
+  .page-footer__logo:active {
+    background-image: url("../img/logotype-footer-pink-desktop.svg");
+    opacity: 0.3;
+  }
+  .copyright__text {
+    margin-right: 14px;
+    font-size: 18px;
   }
 }
