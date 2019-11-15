@@ -2,12 +2,32 @@
 
 
 .page-header {
+  position: relative;
+
   display: block;
 
-  background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 66px, transparent 66px), url("../img/bg_mobile.png");
+  background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 66px, transparent 66px), url("../img/back-tablet@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto 462px;
   background-position: top;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 274px;
+    left: 50%;
+    z-index: 1;
+
+    width: 256px;
+    height: 286px;
+    margin-left: -128px;
+
+    background-image: url("../img/back-tablet@1x-hand.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -97px 21px;
+  }
 }
 
 .page-header__logo-wrap {
@@ -119,6 +139,10 @@
     background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px), url("../img/bg_tablet.jpg");
     background-size: cover;
     background-position: center;
+
+    &::before {
+      background-image: none;
+    }
   }
 
   .page-header__wrapper {
