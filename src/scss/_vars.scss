@@ -4,6 +4,8 @@ $line-height: 24px;
 $color-blue: #283645;
 $color-pink: #d22856;
 $bg-base: #ffffff;
+$burger-menu: linear-gradient(to bottom, #ffffff, #ffffff 4px, transparent 4px, transparent 10px, #ffffff 10px, #ffffff 14px, transparent 14px, transparent 20px, #ffffff 20px);
+$burger-menu-hover: linear-gradient(to bottom, $color-pink, $color-pink 4px, transparent 4px, transparent 10px, $color-pink 10px, $color-pink 14px, transparent 14px, transparent 20px, $color-pink 20px);
 
 $tablet-screen: 660px;
 $desktop-screen: 1200px;

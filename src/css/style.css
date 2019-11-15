@@ -377,32 +377,20 @@ body {
   position: relative;
   display: block;
   width: 50px;
-  height: 4px;
-  background-color: #ffffff;
+  height: 24px;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #ffffff, #ffffff 4px, transparent 4px, transparent 10px, #ffffff 10px, #ffffff 14px, transparent 14px, transparent 20px, #ffffff 20px);
   border: none;
   cursor: pointer;
 }
 
-.main_nav__toggle-button--open::before, .main_nav__toggle-button--open::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
+.main_nav__toggle-button--open:hover {
+  background-image: linear-gradient(to bottom, #d22856, #d22856 4px, transparent 4px, transparent 10px, #d22856 10px, #d22856 14px, transparent 14px, transparent 20px, #d22856 20px);
 }
 
-.main_nav__toggle-button--open::after {
-  top: 10px;
-}
-
-.main_nav__toggle-button--open:hover, .main_nav__toggle-button--open:hover::before, .main_nav__toggle-button--open:hover::after {
-  background-color: #d22856;
-}
-
-.main_nav__toggle-button--open:active, .main_nav__toggle-button--open:active::before, .main_nav__toggle-button--open:active::after {
-  background-color: rgba(210, 40, 86, 0.3);
+.main_nav__toggle-button--open:active {
+  background-image: linear-gradient(to bottom, #d22856, #d22856 4px, transparent 4px, transparent 10px, #d22856 10px, #d22856 14px, transparent 14px, transparent 20px, #d22856 20px);
+  opacity: 0.3;
 }
 
 .main_nav__toggle-button--close {
@@ -487,6 +475,13 @@ body {
     width: 147px;
     height: 40px;
     background-image: url("../img/logotype-white-tablet.svg");
+  }
+  .page-header__logo:hover {
+    background-image: url("../img/logotype-footer-pink-tablet-hover.svg");
+  }
+  .page-header__logo:active {
+    background-image: url("../img/logotype-white-tablet.svg");
+    opacity: 0.3;
   }
 }
 
