@@ -64,13 +64,13 @@
   &:hover,
   &:hover::before,
   &:hover::after {
-    background-color: $color-hover;
+    background-color: $color-pink;
   }
 
   &:active,
   &:active::before,
   &:active::after {
-    background-color: rgba($color-hover, 0.3);
+    background-color: rgba($color-pink, 0.3);
   }
 }
 
@@ -118,24 +118,24 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  background-color: $color-blue-dark;
+  background-color: $color-blue;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
               0 1px 0 #000000;
   &:hover {
-    color: $color-hover;
+    color: $color-pink;
   }
   &--active:hover {
     color: #ffffff;
   }
   &:active {
-    color: rgba($color-hover, 0.3);
+    color: rgba($color-pink, 0.3);
   }
   &--active:active {
     color: #ffffff;
   }
 }
 
-@media (min-width: $media-mobile-max) {
+@media (min-width: $tablet-screen) {
   .page-header {
     background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px), url("../img/bg_tablet.jpg");
     background-size: cover;
@@ -160,7 +160,7 @@
   }
 }
 
-@media (min-width: $media-tablet-max) {
+@media (min-width: $desktop-screen) {
   .page-header {
     background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px), url("../img/bg_desktop.png");
   }
@@ -222,7 +222,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    background-color: $color-blue-dark;
+    background-color: $color-blue;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
                 0 1px 0 #000000;
   }
@@ -292,12 +292,12 @@
   border: 3px solid #ffffff;
   border-radius: 30px;
   &:hover {
-    color: $color-hover;
+    color: $color-pink;
     background-color: #ffffff;
   }
 
   &:active {
-    color: rgba($color-hover, 0.3);
+    color: rgba($color-pink, 0.3);
     background-color: #ffffff;
   }
 }
@@ -355,7 +355,7 @@
   text-align: center;
 }
 
-@media (min-width: $media-mobile-max) {
+@media (min-width: $tablet-screen) {
   .page-header__promo {
     width: 300px;
     margin: 0;
@@ -389,7 +389,7 @@
   }
 }
 
-@media (min-width: $media-tablet-max) {
+@media (min-width: $desktop-screen) {
   .page-header__promo {
     width: 300px;
     margin: 0;
@@ -440,7 +440,7 @@
 
   font-size: 24px;
   line-height: 1.2;
-  color: $color-blue-dark;
+  color: $color-blue;
   font-weight: 300;
   text-align: center;
 
@@ -512,7 +512,7 @@
   padding-bottom: 32px;
 
   font-size: 14px;
-  color: $color-blue-dark;
+  color: $color-blue;
   text-align: center;
 }
 
@@ -524,7 +524,7 @@
   display: none;
 }
 
-@media (min-width: $media-mobile-max) {
+@media (min-width: $tablet-screen) {
   .features {
     padding-top: 53px;
   }
@@ -641,12 +641,12 @@
     padding-bottom: 9px;
 
     font-size: 14px;
-    color: $color-blue-dark;
+    color: $color-blue;
   }
 
   .research-feature__link-more {
     font-size: 14px;
-    color: $color-hover;
+    color: $color-pink;
     &:hover {
       color: #000000;
     }
@@ -656,7 +656,7 @@
   }
 }
 
-@media (min-width: $media-tablet-max) {
+@media (min-width: $desktop-screen) {
   .features {
     padding-top: 68px;
   }
@@ -858,7 +858,7 @@
 
   font-size: 14px;
   line-height: 30px;
-  color: $color-blue-dark;
+  color: $color-blue;
   text-align: center;
 }
 
@@ -889,24 +889,24 @@
   height: 6px;
   padding: 0;
 
-  background-color: rgba($color-blue-dark, 0.3);
+  background-color: rgba($color-blue, 0.3);
 
   border: 3px solid #ffffff;
   border-radius: 50%;
 
   &:hover {
-    background-color: rgba($color-blue-dark, 0.6);
+    background-color: rgba($color-blue, 0.6);
   }
 
   &:active {
-    background-color: rgba($color-blue-dark, 0.1);
+    background-color: rgba($color-blue, 0.1);
   }
 
   &--active,
   &--active:hover,
   &--active:active {
     background-color: #ffffff;
-    border: 3px solid $color-blue-dark;
+    border: 3px solid $color-blue;
   }
 }
 
@@ -918,7 +918,7 @@
   @include visually-hidden;
 }
 
-@media (min-width: $media-mobile-max) {
+@media (min-width: $tablet-screen) {
   .reviews__wrapper {
     padding-top: 100px;
     padding-bottom: 66px;
@@ -952,7 +952,7 @@
 
     font-size: 14px;
     line-height: 30px;
-    color: $color-blue-dark;
+    color: $color-blue;
     text-align: center;
   }
 
@@ -961,7 +961,7 @@
   }
 }
 
-@media (min-width: $media-tablet-max) {
+@media (min-width: $desktop-screen) {
   .reviews__wrapper {
     padding-top: 186px;
     padding-bottom: 41px;
@@ -1008,7 +1008,7 @@
     height: 24px;
     background-color: transparent;
 
-    border: 3px solid rgba($color-blue-dark, 0.3);
+    border: 3px solid rgba($color-blue, 0.3);
 
     cursor: pointer;
 
@@ -1029,23 +1029,23 @@
     }
 
     &--next:hover {
-      border-right-color: rgba($color-blue-dark, 0.6);
-      border-bottom-color: rgba($color-blue-dark, 0.6);
+      border-right-color: rgba($color-blue, 0.6);
+      border-bottom-color: rgba($color-blue, 0.6);
     }
 
     &--back:hover {
-      border-left-color: rgba($color-blue-dark, 0.6);
-      border-bottom-color: rgba($color-blue-dark, 0.6);
+      border-left-color: rgba($color-blue, 0.6);
+      border-bottom-color: rgba($color-blue, 0.6);
     }
 
     &--next:active {
-      border-right-color: rgba($color-blue-dark, 0.1);
-      border-bottom-color: rgba($color-blue-dark, 0.1);
+      border-right-color: rgba($color-blue, 0.1);
+      border-bottom-color: rgba($color-blue, 0.1);
     }
 
     &--back:active {
-      border-left-color: rgba($color-blue-dark, 0.1);
-      border-bottom-color: rgba($color-blue-dark, 0.1);
+      border-left-color: rgba($color-blue, 0.1);
+      border-bottom-color: rgba($color-blue, 0.1);
     }
   }
 }
@@ -1166,7 +1166,7 @@
   color: #ffffff;
   text-align: center;
 
-  background-color: $color-blue-dark;
+  background-color: $color-blue;
 }
 
 .tarrif__cost {
@@ -1179,7 +1179,7 @@
   font-weight: 300;
   text-align: center;
 
-  background-color: $color-blue-dark;
+  background-color: $color-blue;
 }
 
 .tarrif__table {
@@ -1193,7 +1193,7 @@
 
   font-size: 14px;
   line-height: 30px;
-  color: $color-blue-dark;
+  color: $color-blue;
   text-align: left;
 
   border-bottom: 2px solid #e5e5e5;
@@ -1268,24 +1268,24 @@
   height: 6px;
   padding: 0;
 
-  background-color: rgba($color-blue-dark, 0.3);
+  background-color: rgba($color-blue, 0.3);
 
   border: 3px solid #f2f2f2;
   border-radius: 50%;
 
   &:hover {
-    background-color: rgba($color-blue-dark, 0.6);
+    background-color: rgba($color-blue, 0.6);
   }
 
   &:active {
-    background-color: rgba($color-blue-dark, 0.1);
+    background-color: rgba($color-blue, 0.1);
   }
 
   &--active,
   &--active:hover,
   &--active:active {
     background-color: #f2f2f2;
-    border: 3px solid $color-blue-dark;
+    border: 3px solid $color-blue;
   }
 }
 
@@ -1293,7 +1293,7 @@
   @include visually-hidden;
 }
 
-@media (min-width: $media-mobile-max) {
+@media (min-width: $tablet-screen) {
   .prices__list {
     @include container-tablet;
   }
@@ -1360,7 +1360,7 @@
 
     font-size: 14px;
     line-height: 30px;
-    color: $color-blue-dark;
+    color: $color-blue;
     text-align: left;
 
     border: 2px solid #e7e7e7;
@@ -1398,7 +1398,7 @@
   }
 }
 
-@media (min-width: $media-tablet-max) {
+@media (min-width: $desktop-screen) {
   .prices__list {
     @include container-desktop;
   }
@@ -1465,7 +1465,7 @@
 
     font-size: 18px;
     line-height: 30px;
-    color: $color-blue-dark;
+    color: $color-blue;
     text-align: left;
 
     border: 2px solid #e7e7e7;
@@ -1500,3 +1500,217 @@
     display: none;
   }
 }
+
+
+
+
+// MAIN-PAGE CONTACTS BLOCK /////
+
+
+
+
+.contacts__wrapper {
+  padding: 43px 20px 38px 20px;
+}
+
+.contacts__title {
+  @include visually-hidden;
+}
+
+.contacts__text {
+  display: block;
+  padding-bottom: 35px;
+  max-width: 225px;
+  margin: 0 auto;
+
+  font-size: 24px;
+  line-height: 1.2;
+  color: $color-blue;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contacts__list {
+  @include reset-list;
+
+  display: block;
+}
+
+.contacts__item {
+  padding-bottom: 24px;
+
+  text-align: center;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.contact__title {
+  margin: 0;
+
+  padding-bottom: 4px;
+
+  line-height: 1.2;
+  color: $color-blue;
+}
+
+.contact__info {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 1.2;
+  color: $color-pink;
+  font-weight: 300;
+}
+
+.contacts__map {
+  position: relative;
+
+  width: 100%;
+  height: 200px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 32px;
+
+    background-image: linear-gradient(to bottom left, #ffffff, #ffffff 50%, transparent 50%);
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50%;
+    height: 32px;
+
+    background-image: linear-gradient(to bottom right, #ffffff, #ffffff 50%, transparent 50%);
+  }
+}
+
+.contacts__map-iframe {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}
+
+@media (min-width: $tablet-screen) {
+  .contacts__wrapper {
+    @include container-tablet;
+
+    padding-top: 47px;
+    padding-bottom: 28px;
+  }
+
+  .contacts__text {
+    padding-bottom: 44px;
+    max-width: 370px;
+
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .contacts__item {
+    padding-bottom: 49px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .contact__title {
+    padding-bottom: 5px;
+  }
+
+  .contacts__map {
+    height: 374px;
+
+    &::before {
+      height: 69px;
+    }
+
+    &::after {
+      height: 69px;
+    }
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .contacts__wrapper {
+    @include container-desktop;
+
+    padding-top: 65px;
+    padding-bottom: 21px;
+  }
+
+  .contacts__text {
+    padding-bottom: 57px;
+    max-width: 463px;
+
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contacts__item {
+    display: block;
+    width: 250px;
+    padding-bottom: 0;
+
+    &:first-child {
+      padding-right: 0;
+    }
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:last-child {
+      order: 2;
+      padding-bottom: 0;
+
+      .contact__info {
+        display: inline-block;
+        max-width: 215px;
+      }
+    }
+  }
+
+  .contact__title {
+    padding-bottom: 24px;
+  }
+
+  .contacts__map {
+    height: 489px;
+
+    &::before {
+      height: 104px;
+    }
+
+    &::after {
+      height: 104px;
+    }
+  }
+}
+
