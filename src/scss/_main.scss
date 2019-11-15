@@ -50,7 +50,7 @@
   background-size: cover;
 }
 
-.main_nav__toggle-button--open {
+.main_nav__button-open {
   position: relative;
 
   display: block;
@@ -73,7 +73,7 @@
   }
 }
 
-.main_nav__toggle-button--close {
+.main_nav__button-close {
   display: block;
 
   width: 24px;
@@ -95,8 +95,13 @@
 }
 
 .main-nav {
+  position: relative;
+  z-index: 3;
+
   display: none;
-  width: auto;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: -256px;
 }
 
 .main-nav__list {
@@ -120,15 +125,19 @@
   background-color: $color-blue;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
               0 1px 0 #000000;
+
   &:hover {
     color: $color-pink;
   }
+
   &--active:hover {
     color: #ffffff;
   }
+
   &:active {
     color: rgba($color-pink, 0.3);
   }
+
   &--active:active {
     color: #ffffff;
   }
@@ -207,15 +216,16 @@
     display: block;
   }
 
-  .main_nav__toggle-button {
-    &--open,
-    &--close {
+  .main_nav__button {
+    &-open,
+    &-close {
       display: none;
     }
   }
 
   .main-nav {
     width: 623px;
+    margin-bottom: 0;
   }
 
   .page-header__nav-wrap {
@@ -253,10 +263,14 @@
 
     background-color: transparent;
     box-shadow: none;
-  }
 
-  .site-list__link:active {
-    color: rgba(255, 255, 255, 0.3);
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &--active:active {
+      color: #ffffff;
+    }
   }
 
   .site-list__item--active {
@@ -606,7 +620,7 @@
 
   .feature__research {
     display: block;
-    padding: 96px 20px 125px 20px;
+    padding: 96px 20px 26px 20px;
   }
 
   .research-feature__wrap {
@@ -974,8 +988,28 @@
 
 @media (min-width: $desktop-screen) {
   .reviews__wrapper {
+    position: relative;
+
     padding-top: 186px;
     padding-bottom: 41px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 72px;
+      left: 50%;
+
+      width: 77px;
+      height: 63px;
+
+      background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
+
+      transform: translateX(-50%);
+    }
   }
 
   .review__author-name {

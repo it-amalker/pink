@@ -389,7 +389,7 @@ body {
   background-size: cover;
 }
 
-.main_nav__toggle-button--open {
+.main_nav__button-open {
   position: relative;
   display: block;
   width: 50px;
@@ -400,16 +400,16 @@ body {
   cursor: pointer;
 }
 
-.main_nav__toggle-button--open:hover {
+.main_nav__button-open:hover {
   background-image: linear-gradient(to bottom, #d22856, #d22856 4px, transparent 4px, transparent 10px, #d22856 10px, #d22856 14px, transparent 14px, transparent 20px, #d22856 20px);
 }
 
-.main_nav__toggle-button--open:active {
+.main_nav__button-open:active {
   background-image: linear-gradient(to bottom, #d22856, #d22856 4px, transparent 4px, transparent 10px, #d22856 10px, #d22856 14px, transparent 14px, transparent 20px, #d22856 20px);
   opacity: 0.3;
 }
 
-.main_nav__toggle-button--close {
+.main_nav__button-close {
   display: block;
   width: 24px;
   height: 23px;
@@ -420,18 +420,22 @@ body {
   border: none;
 }
 
-.main_nav__toggle-button--close:hover {
+.main_nav__button-close:hover {
   background-image: url("../img/cross-button-hover.svg");
 }
 
-.main_nav__toggle-button--close:active {
+.main_nav__button-close:active {
   background-image: url("../img/cross-button-hover.svg");
   opacity: 0.3;
 }
 
 .main-nav {
+  position: relative;
+  z-index: 3;
   display: none;
-  width: auto;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: -256px;
 }
 
 .main-nav__list {
@@ -504,7 +508,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .page-header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg_desktop.png");
   }
@@ -533,11 +537,12 @@ body {
   .main-nav {
     display: block;
   }
-  .main_nav__toggle-button--open, .main_nav__toggle-button--close {
+  .main_nav__button-open, .main_nav__button-close {
     display: none;
   }
   .main-nav {
     width: 623px;
+    margin-bottom: 0;
   }
   .page-header__nav-wrap {
     display: flex;
@@ -569,6 +574,9 @@ body {
   }
   .site-list__link:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+  .site-list__link--active:active {
+    color: #ffffff;
   }
   .site-list__item--active {
     background-image: linear-gradient(to bottom, transparent 75px, #ffffff 75px, #ffffff 77px, transparent 77px);
@@ -709,7 +717,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .page-header__promo {
     width: 300px;
     margin: 0;
@@ -892,7 +900,7 @@ body {
   }
   .feature__research {
     display: block;
-    padding: 96px 20px 125px 20px;
+    padding: 96px 20px 26px 20px;
   }
   .research-feature__wrap {
     position: relative;
@@ -941,7 +949,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .features {
     padding-top: 68px;
   }
@@ -1205,10 +1213,24 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .reviews__wrapper {
+    position: relative;
     padding-top: 186px;
     padding-bottom: 41px;
+  }
+  .reviews__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    width: 77px;
+    height: 63px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    transform: translateX(-50%);
   }
   .review__author-name {
     padding-bottom: 3px;
@@ -1592,7 +1614,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .prices__list {
     width: 940px;
     margin: 0 auto;
@@ -1817,7 +1839,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .contacts__wrapper {
     width: 940px;
     margin: 0 auto;
@@ -2015,7 +2037,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .page-footer {
     width: 940px;
     margin: 0 auto;
