@@ -370,7 +370,7 @@ ul {
 .page-header {
   position: relative;
   display: block;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/back-tablet@1x.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg_mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto 462px;
   background-position: top;
@@ -385,7 +385,7 @@ ul {
   width: 256px;
   height: 286px;
   margin-left: -128px;
-  background-image: url("../img/back-tablet@1x-hand.png");
+  background-image: url("../img/bg_mobile-hand.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -97px 21px;
@@ -401,12 +401,29 @@ ul {
 
 .page-header__logo {
   display: block;
+}
+
+.page-header__logo-mobile {
   width: 75px;
   height: 22px;
-  background-image: url("../img/logotype-white-mobile.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  fill: #ffffff;
+}
+
+.page-header__logo-mobile:hover {
+  fill: #d22856;
+}
+
+.page-header__logo-mobile:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-desktop {
+  display: none;
 }
 
 .main_nav__button-open {
@@ -430,22 +447,23 @@ ul {
 }
 
 .main_nav__button-close {
-  display: block;
-  width: 24px;
-  height: 23px;
-  background-image: url("../img/cross-button.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  display: none;
+  padding: 0;
   background-color: transparent;
   border: none;
 }
 
-.main_nav__button-close:hover {
-  background-image: url("../img/cross-button-hover.svg");
+.main_nav__button-close-icon {
+  width: 24px;
+  height: 23px;
+  fill: #ffffff;
 }
 
-.main_nav__button-close:active {
-  background-image: url("../img/cross-button-hover.svg");
+.main_nav__button-close-icon:hover {
+  fill: #d22856;
+}
+
+.main_nav__button-close-icon:active {
   opacity: 0.3;
 }
 
@@ -508,23 +526,27 @@ ul {
     min-height: 110px;
     background-color: transparent;
   }
-  .page-header__logo {
+  .page-header__logo-mobile {
+    display: none;
+  }
+  .page-header__logo-tablet {
+    display: block;
     width: 147px;
     height: 40px;
-    background-image: url("../img/logotype-white-tablet.svg");
+    fill: #ffffff;
   }
-  .page-header__logo:hover {
-    background-image: url("../img/logotype-footer-pink-tablet-hover.svg");
+  .page-header__logo-tablet:hover {
+    fill: #d22856;
   }
-  .page-header__logo:active {
-    background-image: url("../img/logotype-white-tablet.svg");
+  .page-header__logo-tablet:active {
+    fill: #ffffff;
     opacity: 0.3;
   }
 }
 
 @media (min-width: 1000px) {
   .page-header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg_desktop.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg_desktop.jpg");
   }
   .page-header__wrapper {
     width: 940px;
@@ -536,16 +558,20 @@ ul {
     padding: 0;
     background-color: transparent;
   }
-  .page-header__logo {
+  .page-header__logo-tablet {
+    display: none;
+  }
+  .page-header__logo-desktop {
+    display: block;
     width: 147px;
     height: 40px;
-    background-image: url("../img/logotype-white-desktop.svg");
+    fill: #ffffff;
   }
-  .page-header__logo:hover {
-    background-image: url("../img/logotype-pink-desktop.svg");
+  .page-header__logo-desktop:hover {
+    fill: #d22856;
   }
-  .page-header__logo:active {
-    background-image: url("../img/logotype-white-desktop.svg");
+  .page-header__logo-desktop:active {
+    fill: #ffffff;
     opacity: 0.3;
   }
   .main-nav {
@@ -661,19 +687,22 @@ ul {
 .apps-list__link--apple {
   width: 47px;
   height: 56px;
-  background: url("../img/apple-icon.svg") center no-repeat;
+  background: url("../img/sprites/sprite.svg#apple-icon") center no-repeat;
+  background-size: cover;
 }
 
 .apps-list__link--android {
   width: 43px;
   height: 47px;
-  background: url("../img/android-icon.svg") center no-repeat;
+  background: url("../img/sprites/sprite.svg#android-icon") center no-repeat;
+  background-size: cover;
 }
 
 .apps-list__link--microsoft {
   width: 44px;
   height: 41px;
-  background: url("../img/microsoft-icon.svg") center no-repeat;
+  background: url("../img/sprites/sprite.svg#microsoft-icon") center no-repeat;
+  background-size: cover;
 }
 
 .promo-apps__info {
@@ -787,7 +816,7 @@ ul {
   width: 156px;
   height: 320px;
   margin-left: -78px;
-  background-image: url("../img/features-phone.svg");
+  background-image: url("../img/feature-desktop-3.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -856,7 +885,7 @@ ul {
     left: 0;
     width: 265px;
     height: 547px;
-    background-image: url("../img/features-phone.svg");
+    background-image: url("../img/sprites/sprite.svg#features-phone");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1169,9 +1198,9 @@ ul {
     left: 50%;
     width: 77px;
     height: 63px;
-    background-image: url("../img/quotes.svg");
+    background-image: url("../img/sprites/sprite.svg#quotes");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
     background-size: cover;
     transform: translateX(-50%);
   }
@@ -1358,7 +1387,7 @@ ul {
   right: 17px;
   width: 31px;
   height: 21px;
-  background-image: url("../img/tarrif-yes.svg");
+  background-image: url("../img/sprites/sprite.svg#tarrif-yes");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1371,7 +1400,7 @@ ul {
   right: 19px;
   width: 27px;
   height: 26px;
-  background-image: url("../img/tarrif-no.svg");
+  background-image: url("../img/sprites/sprite.svg#tarrif-no");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1768,19 +1797,20 @@ ul {
   }
   .page-footer__logo {
     display: block;
+  }
+  .page-footer__logo-tablet {
     width: 147px;
     height: 40px;
-    background-image: url("../img/logotype-footer-pink-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
-  .page-footer__logo:hover {
-    background-image: url("../img/logotype-footer-pink-tablet-hover.svg");
+  .page-footer__logo-tablet:hover {
+    fill: #d22856;
   }
-  .page-footer__logo:active {
-    background-image: url("../img/logotype-footer-pink-tablet.svg");
+  .page-footer__logo-tablet:active {
+    fill: #000000;
     opacity: 0.3;
+  }
+  .page-footer__logo-desktop {
+    display: none;
   }
   .social {
     display: flex;
@@ -1815,21 +1845,21 @@ ul {
     height: 14px;
     margin-top: -7px;
     margin-left: -9px;
-    background-image: url("../img/social-twitter.svg");
+    background-image: url("../img/sprites/sprite.svg#social-twitter");
   }
   .social__link--facebook::before {
     width: 9px;
     height: 18px;
     margin-top: -9px;
     margin-left: -4px;
-    background-image: url("../img/social-facebook.svg");
+    background-image: url("../img/sprites/sprite.svg#social-facebook");
   }
   .social__link--youtube::before {
     width: 15px;
     height: 13px;
     margin-top: -6px;
     margin-left: -7px;
-    background-image: url("../img/social-youtube.svg");
+    background-image: url("../img/sprites/sprite.svg#social-youtube");
   }
   .social__link:hover {
     border-color: #283645;
@@ -1851,20 +1881,17 @@ ul {
     color: #283645;
     font-weight: normal;
   }
-  .copyright__logo {
+  .copyright__logo-icon {
     display: block;
     width: 27px;
     height: 34px;
-    background-image: url("../img/html-academy-logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    fill: #d22856;
   }
-  .copyright__logo:hover {
-    background-image: url("../img/html-academy-logo-hover.svg");
+  .copyright__logo-icon:hover {
+    fill: #283645;
   }
-  .copyright__logo:active {
-    opacity: 0.3;
+  .copyright__logo-icon:active {
+    fill: rgba(40, 54, 69, 0.3);
   }
 }
 
@@ -1876,18 +1903,33 @@ ul {
     padding-top: 70px;
     padding-bottom: 72px;
   }
-  .page-footer__logo {
-    background-image: url("../img/logotype-footer-pink-desktop.svg");
+  .page-footer__logo-tablet {
+    display: none;
   }
-  .page-footer__logo:hover {
-    background-image: url("../img/logotype-footer-pink-desktop-hover.svg");
+  .page-footer__logo-desktop {
+    display: block;
+    width: 147px;
+    height: 40px;
   }
-  .page-footer__logo:active {
-    background-image: url("../img/logotype-footer-pink-desktop.svg");
+  .page-footer__logo-desktop:hover {
+    fill: #d22856;
+  }
+  .page-footer__logo-desktop:active {
+    fill: #000000;
     opacity: 0.3;
   }
   .copyright__text {
     margin-right: 14px;
     font-size: 18px;
   }
+}
+
+.test-img {
+  width: 100px;
+  height: 20px;
+  fill: red;
+}
+
+.test-img:hover {
+  fill: black;
 }

@@ -5,7 +5,11 @@ let gulp = require('gulp'),
   concat = require('gulp-concat'),
   rename = require('gulp-rename'),
   del = require('del'),
-  autoprefixer = require('gulp-autoprefixer');
+  autoprefixer = require('gulp-autoprefixer'),
+  svgSprite = require('gulp-svg-sprite'),
+  svgmin = require('gulp-svgmin'),
+  cheerio = require('gulp-cheerio'),
+  replace = require('gulp-replace');
 
 gulp.task('html', function () {
   return gulp.src('src/*.html')
@@ -38,8 +42,8 @@ gulp.task('js', function () {
 
 gulp.task('js-libs', function () {
   return gulp.src([
-    '',
-    ''
+    'node_modules/svg4everybody/dist/svg4everybody.js',
+    'src/js/run.libs.min.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -83,18 +87,50 @@ gulp.task('pack', async function () {
   let moveFonts = gulp.src('src/fonts/*.*')
     .pipe(gulp.dest('build/fonts'));
 
-  let moveImg = gulp.src('src/img/*.*')
+  let moveImg = gulp.src('src/img/**/*.*')
     .pipe(gulp.dest('build/img'));
 });
+
+gulp.task('svgSpriteBuild', function () {
+  return gulp.src('src/img/*.svg')
+    .pipe(svgmin({
+      js2svg: {
+        pretty: true
+      }
+    }))
+
+    .pipe(cheerio({
+      run: function ($) {
+        // $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+
+    .pipe(replace('&gt;', '>'))
+
+    .pipe(svgSprite({
+      mode: {
+        stack: {
+          sprite: '../sprite.svg'
+        }
+      }
+    }))
+
+    .pipe(gulp.dest('src/img/sprites/'))
+    .pipe(browserSync.reload({ stream: true }))
+})
 
 gulp.task('watch', function () {
   gulp.watch('src/scss/*.scss', gulp.parallel('scss'))
   gulp.watch('src/*.html', gulp.parallel('html'))
   gulp.watch('src/*.js', gulp.parallel('js'))
   gulp.watch('src/img/*.*', gulp.parallel('img'))
+  gulp.watch('src/img/*.svg', gulp.parallel('svgSpriteBuild'))
 });
 
 gulp.task('build', gulp.series('clean', 'pack'))
 
-gulp.task('default', gulp.parallel('css-libs', 'html', 'scss', 'js', 'img', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('css-libs', 'html', 'scss', 'js-libs', 'js', 'img', 'svgSpriteBuild', 'browser-sync', 'watch'));
 

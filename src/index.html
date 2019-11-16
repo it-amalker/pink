@@ -15,9 +15,21 @@
     <div class="page-header__wrapper">
       <div class="page-header__nav-wrap">
         <div class="page-header__logo-wrap">
-          <a href="#" class="page-header__logo">
+          <a href="#" class="page-header__logo"><svg class="page-header__logo-mobile">
+              <use xlink:href="img/sprites/sprite.svg#logotype-header-mobile"></use>
+            </svg>
+            <svg class="page-header__logo-tablet">
+              <use xlink:href="img/sprites/sprite.svg#logotype-header-tablet"></use>
+            </svg>
+            <svg class="page-header__logo-desktop">
+              <use xlink:href="img/sprites/sprite.svg#logotype-header-desktop"></use>
+            </svg>
           </a>
           <button class="main_nav__button-open" type="button"></button>
+          <button class="main_nav__button-close" type="button"><svg class="main_nav__button-close-icon">
+              <use xlink:href="img/sprites/sprite.svg#cross-button"></use>
+            </svg>
+          </button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
@@ -33,14 +45,22 @@
         <p class="promo-apps__slogan">Взгляните на жизнь иначе!</p>
         <a href="https://www.apple.com/ios/app-store/" class="promo-apps__button">Скачать приложение</a>
         <ul class="promo-apps__list apps-list">
-          <li class="apps-list__item"><a class="apps-list__link apps-list__link--apple"
-              href="https://www.apple.com/ios/app-store/"><span class="visually-hidden">Apple</span></a>
+          <li class="apps-list__item">
+            <a class="apps-list__link apps-list__link--apple" href="https://www.apple.com/ios/app-store/">
+              <span class="visually-hidden">Apple</span>
+            </a>
           </li>
-          <li class="apps-list__item"><a class="apps-list__link apps-list__link--android"
-              href="https://play.google.com/store"><span class="visually-hidden">Android</span></a>
+          <li class="apps-list__item">
+            <a class="apps-list__link apps-list__link--android" href="https://play.google.com/store">
+              <span class="visually-hidden">Android</span>
+            </a>
           </li>
-          <li class="apps-list__item"><a class="apps-list__link apps-list__link--microsoft"
-              href="https://www.microsoft.com/en-us/store/apps/windows"><span class="visually-hidden">Windows</span></a>
+          <li class="apps-list__item">
+            <a class="apps-list__link apps-list__link--microsoft"
+              href="https://www.microsoft.com/en-us/store/apps/windows">
+
+              <span class="visually-hidden">Windows</span>
+            </a>
           </li>
         </ul>
         <p class="promo-apps__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -230,7 +250,14 @@
       </div>
     </section>
     <footer class="page-footer">
-      <a href="#" class="page-footer__logo"></a>
+      <a href="#" class="page-footer__logo">
+        <svg class="page-footer__logo-tablet">
+          <use xlink:href="img/sprites/sprite.svg#logotype-footer-tablet"></use>
+        </svg>
+        <svg class="page-footer__logo-desktop">
+          <use xlink:href="img/sprites/sprite.svg#logotype-footer-desktop"></use>
+        </svg>
+      </a>
       <ul class="footer-social__list social">
         <li class="social__item"><a href="#" class="social__link social__link--twitter "><span
               class="visually-hidden">Мы в Twitter</span></a></li>
@@ -241,11 +268,17 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML
-            Academy</span></a>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__logo-icon">
+            <use xlink:href="img/sprites/sprite.svg#html-academy-logo"></use>
+          </svg>
+          <span class="visually-hidden">HTML
+            Academy</span>
+        </a>
       </div>
     </footer>
   </main>
+  <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

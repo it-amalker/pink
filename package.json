@@ -24,7 +24,14 @@
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify": "^3.0.2",
     "normalize.css": "^8.0.1"
+  },
+  "dependencies": {
+    "gulp-cheerio": "^1.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-svgmin": "^2.2.0",
+    "svg4everybody": "^2.1.9"
   }
 }

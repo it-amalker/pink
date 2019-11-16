@@ -6,7 +6,7 @@
 
   display: block;
 
-  background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 66px, transparent 66px), url("../img/back-tablet@1x.jpg");
+  background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 66px, transparent 66px), url("../img/bg_mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto 462px;
   background-position: top;
@@ -23,7 +23,7 @@
     height: 286px;
     margin-left: -128px;
 
-    background-image: url("../img/back-tablet@1x-hand.png");
+    background-image: url("../img/bg_mobile-hand.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -97px 21px;
@@ -41,13 +41,30 @@
 
 .page-header__logo {
   display: block;
-  width: 75px;
-  height: 22px;
 
-  background-image: url("../img/logotype-white-mobile.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &-mobile {
+    width: 75px;
+    height: 22px;
+
+    fill: #ffffff;
+
+    &:hover {
+      fill: $color-pink;
+    }
+
+    &:active {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+  }
+
+  &-tablet {
+    display: none;
+  }
+
+  &-desktop {
+    display: none;
+  }
 }
 
 .main_nav__button-open {
@@ -74,23 +91,25 @@
 }
 
 .main_nav__button-close {
-  display: block;
-
-  width: 24px;
-  height: 23px;
-
-  background-image: url("../img/cross-button.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  display: none;
+  padding: 0;
 
   background-color: transparent;
   border: none;
-  &:hover {
-    background-image: url("../img/cross-button-hover.svg");
-  }
-  &:active {
-    background-image: url("../img/cross-button-hover.svg");
-    opacity: 0.3;
+
+  &-icon {
+    width: 24px;
+    height: 23px;
+
+    fill: #ffffff;
+
+    &:hover {
+      fill: $color-pink;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -161,24 +180,34 @@
   }
 
   .page-header__logo {
-    width: 147px;
-    height: 40px;
 
-    background-image: url("../img/logotype-white-tablet.svg");
-    &:hover {
-      background-image: url("../img/logotype-footer-pink-tablet-hover.svg");
+    &-mobile {
+      display: none;
     }
 
-    &:active {
-      background-image: url("../img/logotype-white-tablet.svg");
-      opacity: 0.3;
+    &-tablet {
+      display: block;
+
+      width: 147px;
+      height: 40px;
+
+      fill: #ffffff;
+
+      &:hover {
+        fill: $color-pink;
+      }
+
+      &:active {
+        fill: #ffffff;
+        opacity: 0.3;
+      }
     }
   }
 }
 
 @media (min-width: $desktop-screen) {
   .page-header {
-    background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px), url("../img/bg_desktop.png");
+    background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px), url("../img/bg_desktop.jpg");
   }
 
   .page-header__wrapper {
@@ -193,19 +222,28 @@
   }
 
   .page-header__logo {
-    width: 147px;
-    height: 40px;
 
-    background-image: url("../img/logotype-white-desktop.svg");
-  }
+    &-tablet {
+      display: none;
+    }
 
-  .page-header__logo:hover {
-    background-image: url("../img/logotype-pink-desktop.svg");
+    &-desktop {
+      display: block;
 
-  }
-  .page-header__logo:active {
-    background-image: url("../img/logotype-white-desktop.svg");
-    opacity: 0.3;
+      width: 147px;
+      height: 40px;
+
+      fill: #ffffff;
+
+      &:hover {
+        fill: $color-pink;
+      }
+
+      &:active {
+        fill: #ffffff;
+        opacity: 0.3;
+      }
+    }
   }
 
   .main-nav {
@@ -334,6 +372,7 @@
 .apps-list__item {
   display: inline-block;
   margin-right: 31px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -341,22 +380,27 @@
 
 .apps-list__link {
   display: block;
+
   &--apple {
     width: 47px;
     height: 56px;
-    background: url("../img/apple-icon.svg") center no-repeat;
+    background: url("../img/sprites/sprite.svg#apple-icon") center no-repeat;
+    background-size: cover;
+
   }
 
   &--android {
     width: 43px;
     height: 47px;
-    background: url("../img/android-icon.svg") center no-repeat;
+    background: url("../img/sprites/sprite.svg#android-icon") center no-repeat;
+    background-size: cover;
   }
 
   &--microsoft {
     width: 44px;
     height: 41px;
-    background: url("../img/microsoft-icon.svg") center no-repeat;
+    background: url("../img/sprites/sprite.svg#microsoft-icon") center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -496,7 +540,7 @@
     height: 320px;
     margin-left: -78px;
 
-    background-image: url("../img/features-phone.svg");
+    background-image: url("../img/feature-desktop-3.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: contain;
@@ -580,7 +624,7 @@
       width: 265px;
       height: 547px;
 
-      background-image: url("../img/features-phone.svg");
+      background-image: url("../img/sprites/sprite.svg#features-phone");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -976,9 +1020,9 @@
       width: 77px;
       height: 63px;
 
-      background-image: url("../img/quotes.svg");
+      background-image: url("../img/sprites/sprite.svg#quotes");
       background-repeat: no-repeat;
-      background-position: 0 0;
+      background-position: center;
       background-size: cover;
 
       transform: translateX(-50%);
@@ -1225,7 +1269,7 @@
     width: 31px;
     height: 21px;
 
-    background-image: url("../img/tarrif-yes.svg");
+    background-image: url("../img/sprites/sprite.svg#tarrif-yes");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1241,7 +1285,7 @@
     width: 27px;
     height: 26px;
 
-    background-image: url("../img/tarrif-no.svg");
+    background-image: url("../img/sprites/sprite.svg#tarrif-no");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1722,6 +1766,7 @@
 
 
 
+
 // FOOTER-PAGE BLOCK /////
 
 
@@ -1745,19 +1790,23 @@
 
   .page-footer__logo {
     display: block;
-    width: 147px;
-    height: 40px;
 
-    background-image: url("../img/logotype-footer-pink-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    &:hover {
-      background-image: url("../img/logotype-footer-pink-tablet-hover.svg");
+    &-tablet {
+      width: 147px;
+      height: 40px;
     }
-    &:active {
-      background-image: url("../img/logotype-footer-pink-tablet.svg");
+
+    &-tablet:hover {
+      fill: $color-pink;
+    }
+
+    &-tablet:active {
+      fill: #000000;
       opacity: 0.3;
+    }
+
+    &-desktop {
+      display: none;
     }
   }
 
@@ -1804,7 +1853,7 @@
       margin-top: -7px;
       margin-left: -9px;
 
-      background-image: url("../img/social-twitter.svg");
+      background-image: url("../img/sprites/sprite.svg#social-twitter");
     }
 
     &--facebook::before {
@@ -1813,7 +1862,7 @@
       margin-top: -9px;
       margin-left: -4px;
 
-      background-image: url("../img/social-facebook.svg");
+      background-image: url("../img/sprites/sprite.svg#social-facebook");
     }
 
     &--youtube::before {
@@ -1822,7 +1871,7 @@
       margin-top: -6px;
       margin-left: -7px;
 
-      background-image: url("../img/social-youtube.svg");
+      background-image: url("../img/sprites/sprite.svg#social-youtube");
     }
 
     &:hover {
@@ -1852,22 +1901,19 @@
     font-weight: normal;
   }
 
-  .copyright__logo {
+  .copyright__logo-icon {
     display: block;
     width: 27px;
     height: 34px;
 
-    background-image: url("../img/html-academy-logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    fill: $color-pink;
 
     &:hover {
-      background-image: url("../img/html-academy-logo-hover.svg");
+      fill: $color-blue;
     }
 
     &:active {
-      opacity: 0.3;
+      fill: rgba($color-blue, 0.3);
     }
   }
 
@@ -1882,15 +1928,23 @@
   }
 
   .page-footer__logo {
-    background-image: url("../img/logotype-footer-pink-desktop.svg");
 
-    &:hover {
-      background-image: url("../img/logotype-footer-pink-desktop-hover.svg");
+    &-tablet {
+      display: none;
     }
 
-    &:active {
-      background-image: url("../img/logotype-footer-pink-desktop.svg");
+    &-desktop {
+      display: block;
+      width: 147px;
+      height: 40px;
+    }
 
+    &-desktop:hover {
+      fill: $color-pink;
+    }
+
+    &-desktop:active {
+      fill: #000000;
       opacity: 0.3;
     }
   }
@@ -1899,5 +1953,15 @@
     margin-right: 14px;
 
     font-size: 18px;
+  }
+}
+
+.test-img {
+  width: 100px;
+  height: 20px;
+
+  fill: red;
+  &:hover {
+    fill: black;
   }
 }
