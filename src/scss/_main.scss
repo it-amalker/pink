@@ -6,7 +6,7 @@
 
   display: block;
 
-  background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 66px, transparent 66px), url("../img/bg_mobile.jpg");
+  background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 66px, transparent 66px), url("../img/bg_tablet.jpg");
   background-repeat: no-repeat;
   background-size: auto 462px;
   background-position: top;
@@ -23,7 +23,7 @@
     height: 286px;
     margin-left: -128px;
 
-    background-image: url("../img/bg_mobile-hand.png");
+    background-image: url("../img/bg-hand.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -97px 21px;
@@ -165,7 +165,15 @@
     background-position: center;
 
     &::before {
-      background-image: none;
+      bottom: 0;
+
+      width: 541px;
+      height: 546px;
+      margin-left: -233px;
+
+      background-size: cover;
+
+      background-position: -97px 0;
     }
   }
 
@@ -208,6 +216,18 @@
 @media (min-width: $desktop-screen) {
   .page-header {
     background-image: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px), url("../img/bg_desktop.jpg");
+
+    &::before {
+      bottom: 0;
+
+      width: 658px;
+      height: 644px;
+      margin-left: -277px;
+
+      background-size: cover;
+
+      background-position: -119px 19;
+    }
   }
 
   .page-header__wrapper {
@@ -416,6 +436,9 @@
 
 @media (min-width: $tablet-screen) {
   .page-header__promo {
+    position: relative;
+    z-index: 1;
+
     width: 300px;
     margin: 0;
     padding: 96px 0 105px 0;
@@ -1963,5 +1986,63 @@
   fill: red;
   &:hover {
     fill: black;
+  }
+}
+
+
+
+
+/* PHOTO.HTML */
+
+
+
+.page-header--photo {
+  height: 237px;
+
+  &::before {
+    background-image: none;
+  }
+}
+
+.page-header__title {
+  display: block;
+  max-width: 175px;
+  margin: 0 auto;
+  padding: 32px 0 83px 0;
+
+  font-size: 24px;
+  line-height: 1.2;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: $tablet-screen) {
+  .page-header--photo {
+    height: 440px;
+
+    background-size: 200%;
+
+    background-position: center top;
+  }
+
+  .page-header__title {
+    max-width: 355px;
+    padding: 71px 0 139px 0;
+
+    font-size: 50px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .page-header--photo {
+    height: 394px;
+  }
+
+  .page-header__title {
+    max-width: 355px;
+    padding: 64px 0 100px 0;
+
+    font-size: 50px;
   }
 }
