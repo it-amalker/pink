@@ -104,10 +104,6 @@
   margin-bottom: -256px;
 }
 
-.main-nav__list {
-  @include reset-list
-}
-
 .site-list__item {
   text-align: center;
 }
@@ -327,13 +323,7 @@
   }
 }
 
-.apps-list__item-name {
-  @include visually-hidden;
-}
-
 .promo-apps__list {
-  @include reset-list;
-
   display: block;
   margin-bottom: 17px;
   padding: 0 37px;
@@ -448,10 +438,7 @@
 // PAGE-MAIN FEATURES BLOCK /////
 
 
-.page-main__title,
-.features__title {
-  @include visually-hidden;
-}
+
 
 .features {
   padding-top: 43px;
@@ -479,7 +466,6 @@
   position: relative;
 
   display: block;
-  @include reset-list;
   padding: 82px 20px 315px 20px;
 
   background-color: #f2f2f2;
@@ -515,10 +501,6 @@
     background-position: center bottom;
     background-size: contain;
   }
-}
-
-.features__list {
-  @include reset-list;
 }
 
 .feature__title {
@@ -858,17 +840,14 @@
   padding-bottom: 87px;
 }
 
-.reviews__title {
-  @include visually-hidden;
-}
-
 .review__item {
   margin: 0;
 }
 
 .review__author-name {
   display: block;
-  margin: 0 auto ;
+  margin: 0 auto;
+  padding-bottom: 17px;
 
   line-height: 30px;
   font-weight: bold;
@@ -892,8 +871,6 @@
 }
 
 .reviews__toggles {
-  @include reset-list;
-
   position: absolute;
   bottom: 42px;
   left: 50%;
@@ -937,10 +914,6 @@
 
 .reviews__arrow-toggles {
   display: none;
-}
-
-.hidden__text {
-  @include visually-hidden;
 }
 
 @media (min-width: $tablet-screen) {
@@ -1031,12 +1004,7 @@
     display: none;
   }
 
-  .hidden__arrows-text {
-    @include visually-hidden;
-  }
-
   .reviews__arrow-toggles {
-    @include reset-list;
     position: relative;
 
     display: block;
@@ -1104,10 +1072,6 @@
 
 
 
-.prices__title {
-  @include visually-hidden;
-}
-
 .prices__wrapper {
   position: relative;
 
@@ -1130,7 +1094,6 @@
 }
 
 .prices__list {
-  @include reset-list;
   position: relative;
 
   display: flex;
@@ -1286,13 +1249,7 @@
 
 }
 
-.tarrif__available-text {
-  @include visually-hidden;
-}
-
 .prices__toggles {
-  @include reset-list;
-
   position: absolute;
   bottom: 47px;
   left: 50%;
@@ -1332,10 +1289,6 @@
     background-color: #f2f2f2;
     border: 3px solid $color-blue;
   }
-}
-
-.prices-hidden__text {
-  @include visually-hidden;
 }
 
 @media (min-width: $tablet-screen) {
@@ -1558,10 +1511,6 @@
   padding: 43px 20px 38px 20px;
 }
 
-.contacts__title {
-  @include visually-hidden;
-}
-
 .contacts__text {
   display: block;
   padding-bottom: 35px;
@@ -1576,8 +1525,6 @@
 }
 
 .contacts__list {
-  @include reset-list;
-
   display: block;
 }
 
@@ -1814,10 +1761,6 @@
     }
   }
 
-  .footer-social__list {
-    @include reset-list;
-  }
-
   .social {
     display: flex;
     justify-content: space-between;
@@ -1829,10 +1772,6 @@
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  .social__item-text {
-    @include visually-hidden;
   }
 
   .social__link {
@@ -1911,10 +1850,6 @@
     line-height: 18px;
     color: $color-blue;
     font-weight: normal;
-  }
-
-  .copyright__logo-text {
-    @include visually-hidden;
   }
 
   .copyright__logo {

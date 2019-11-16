@@ -347,6 +347,26 @@ body {
   background: #ffffff;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   position: relative;
   display: block;
@@ -436,12 +456,6 @@ body {
   width: 90%;
   margin: 0 auto;
   margin-bottom: -256px;
-}
-
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .site-list__item {
@@ -624,24 +638,7 @@ body {
   background-color: #ffffff;
 }
 
-.apps-list__item-name {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .promo-apps__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: block;
   margin-bottom: 17px;
   padding: 0 37px;
@@ -743,21 +740,6 @@ body {
   }
 }
 
-.page-main__title,
-.features__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .features {
   padding-top: 43px;
 }
@@ -782,9 +764,6 @@ body {
 .features__wrap {
   position: relative;
   display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   padding: 82px 20px 315px 20px;
   background-color: #f2f2f2;
   overflow: hidden;
@@ -812,12 +791,6 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
-}
-
-.features__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .feature__title {
@@ -1080,20 +1053,6 @@ body {
   padding-bottom: 87px;
 }
 
-.reviews__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .review__item {
   margin: 0;
 }
@@ -1101,6 +1060,7 @@ body {
 .review__author-name {
   display: block;
   margin: 0 auto;
+  padding-bottom: 17px;
   line-height: 30px;
   font-weight: bold;
   font-style: normal;
@@ -1122,9 +1082,6 @@ body {
 }
 
 .reviews__toggles {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   position: absolute;
   bottom: 42px;
   left: 50%;
@@ -1163,20 +1120,6 @@ body {
 
 .reviews__arrow-toggles {
   display: none;
-}
-
-.hidden__text {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 @media (min-width: 660px) {
@@ -1246,23 +1189,7 @@ body {
   .reviews__toggles {
     display: none;
   }
-  .hidden__arrows-text {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
   .reviews__arrow-toggles {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     position: relative;
     display: block;
     width: 940px;
@@ -1308,20 +1235,6 @@ body {
   }
 }
 
-.prices__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .prices__wrapper {
   position: relative;
   padding: 91px 20px 99px 20px;
@@ -1339,9 +1252,6 @@ body {
 }
 
 .prices__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   position: relative;
   display: flex;
   overflow: hidden;
@@ -1467,24 +1377,7 @@ body {
   background-size: cover;
 }
 
-.tarrif__available-text {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .prices__toggles {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   position: absolute;
   bottom: 47px;
   left: 50%;
@@ -1519,20 +1412,6 @@ body {
 .prices-toggles__switch--active, .prices-toggles__switch--active:hover, .prices-toggles__switch--active:active {
   background-color: #f2f2f2;
   border: 3px solid #283645;
-}
-
-.prices-hidden__text {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 @media (min-width: 660px) {
@@ -1697,20 +1576,6 @@ body {
   padding: 43px 20px 38px 20px;
 }
 
-.contacts__title {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .contacts__text {
   display: block;
   padding-bottom: 35px;
@@ -1724,9 +1589,6 @@ body {
 }
 
 .contacts__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: block;
 }
 
@@ -1920,11 +1782,6 @@ body {
     background-image: url("../img/logotype-footer-pink-tablet.svg");
     opacity: 0.3;
   }
-  .footer-social__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
   .social {
     display: flex;
     justify-content: space-between;
@@ -1934,19 +1791,6 @@ body {
   }
   .social__item:last-child {
     margin-right: 0;
-  }
-  .social__item-text {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
   }
   .social__link {
     position: relative;
@@ -2006,19 +1850,6 @@ body {
     line-height: 18px;
     color: #283645;
     font-weight: normal;
-  }
-  .copyright__logo-text {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
   }
   .copyright__logo {
     display: block;
