@@ -13,31 +13,40 @@
 <body>
   <header class="page-header page-header--photo">
     <div class="page-header__wrapper">
-      <div class="page-header__nav-wrap">
-        <div class="page-header__logo-wrap">
-          <a href="index.html" class="page-header__logo"><svg class="page-header__logo-mobile">
-              <use xlink:href="img/sprites/sprite.svg#logotype-header-mobile"></use>
+      <div class="page-header__nav-wrapper">
+        <div class="logo">
+          <a href="#" class="logo__icon">
+            <svg class="logo__icon--mobile">
+              <use xlink:href="img/sprites/sprite.svg#logo-header-mobile"></use>
             </svg>
-            <svg class="page-header__logo-tablet">
-              <use xlink:href="img/sprites/sprite.svg#logotype-header-tablet"></use>
+            <svg class="logo__icon--tablet">
+              <use xlink:href="img/sprites/sprite.svg#logo-header-tablet"></use>
             </svg>
-            <svg class="page-header__logo-desktop">
-              <use xlink:href="img/sprites/sprite.svg#logotype-header-desktop"></use>
+            <svg class="logo__icon--desktop">
+              <use xlink:href="img/sprites/sprite.svg#logo-header-desktop"></use>
             </svg>
           </a>
-          <button class="main_nav__button-open" type="button"></button>
-          <button class="main_nav__button-close" type="button"><svg class="main_nav__button-close-icon">
+          <button class="logo__button-nav-open" type="button"></button>
+          <button class="logo__button-nav-close" type="button">
+            <svg class="logo__button-nav-close-icon">
               <use xlink:href="img/sprites/sprite.svg#cross-button"></use>
             </svg>
           </button>
         </div>
         <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a
-                class="site-list__link site-list__link--active">Фотографии</a></li>
-            <li class="site-list__item"><a href="#" class="site-list__link">Конкурс</a></li>
-            <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
+          <ul class="main-nav__list menu">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item menu__item--active">
+              <a class="menu__link menu__link--active">Фотографии</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">HTML Academy</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -47,32 +56,112 @@
   <main class="page-main">
     <h1 class="visually-hidden">Фотографии пользователей</h1>
 
+    <section class="photo-posts">
+      <h2 class="visually-hidden">Посты с фотографиями</h2>
+      <p class="photo-posts__greeting-text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+        хватает ваших?</p>
+      <div class="photo-posts__best"><img class="photo-posts__best-img" src="img/photo-post-1-best.jpg"
+          alt="Панорама дня">
+      </div>
+      <ul class="photo-posts__list">
+        <li class="photo_posts__item">
+          <blockquote class="photo_posts__comment">
+            <cite class="photo_posts__author-name">Анна <span class="photo_posts__post-time">(5 минут
+                назад)</span></cite>
+            <p class="photo_posts__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
+              в перископе, задавайте свои вопросы!</p>
+            <a class="photo_posts__like-button" href="#">Нравится: 215</a>
+          </blockquote>
+        </li>
+        <li class="photo_post__item">
+          <img class="photo-posts__img" src="img/photo-post-2.jpg" alt="Телескоп">
+          <blockquote class="photo_posts__comment">
+            <cite class="photo_posts__author-name">Левон <span class="photo_posts__post-time">(5 часов
+                назад)</span></cite>
+            <p class="photo_posts__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="photo_posts__like-button" href="#">Нравится: 356</a>
+          </blockquote>
+        </li>
+        <li class="photo_post__item">
+          <img class="photo-posts__img" src="img/photo-post-3.jpg" alt="Барабанная установка">
+          <blockquote class="photo_posts__comment">
+            <cite class="photo_posts__author-name">Антон <span class="photo_posts__post-time">(12 часов
+                назад)</span></cite>
+            <p class="photo_posts__text">Соседи будут рады!</p>
+            <a class="photo_posts__like-button" href="#">Нравится: 666</a>
+          </blockquote>
+        </li>
+        <li class="photo_post__item">
+          <img class="photo-posts__img" src="img/photo-post-4.jpg" alt="Окна">
+          <blockquote class="photo_posts__comment">
+            <cite class="photo_posts__author-name">Борис <span class="photo_posts__post-time">(20 часов
+                назад)</span></cite>
+            <p class="photo_posts__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="photo_posts__like-button" href="#">Нравится: 215</a>
+          </blockquote>
+        </li>
+        <li class="photo_post__item">
+          <img class="photo-posts__img" src="img/photo-post-5.jpg" alt="Кубанская бахча">
+          <blockquote class="photo_posts__comment">
+            <cite class="photo_posts__author-name">Сергей <span class="photo_posts__post-time">(25 часов
+                назад)</span></cite>
+            <p class="photo_posts__text">Самая кубанская в мире!</p>
+            <a class="photo_posts__like-button" href="#">Нравится: 4</a>
+          </blockquote>
+        </li>
+        <li class="photo_post__item">
+          <img class="photo-posts__img" src="img/photo-post-6.jpg" alt="В горах">
+          <blockquote class="photo_posts__comment">
+            <cite class="photo_posts__author-name">Максим <span class="photo_posts__post-time">(40 часов
+                назад)</span></cite>
+            <p class="photo_posts__text">Где снег-то?</p>
+            <a class="photo_posts__like-button" href="#">Нравится: 150</a>
+          </blockquote>
+        </li>
+        <li class="photo_post__item">
+          <img class="photo-posts__img" src="img/photo-post-7.jpg" alt="Вид из самолета">
+          <blockquote class="photo_posts__comment">
+            <cite class="photo_posts__author-name">Надежда <span class="photo_posts__post-time">(45 часов
+                назад)</span></cite>
+            <p class="photo_posts__text">Всем GM и взаимные лайки!</p>
+            <a class="photo_posts__like-button" href="#">Нравится: 2560</a>
+          </blockquote>
+        </li>
+      </ul>
     </section>
     <!-- <footer class="page-footer">
-      <a href="#" class="page-footer__logo">
-        <svg class="page-footer__logo-tablet">
-          <use xlink:href="img/sprites/sprite.svg#logotype-footer-tablet"></use>
+      <a href="#" class="footer-logo">
+        <svg class="footer-logo__icon--tablet">
+          <use xlink:href="img/sprites/sprite.svg#logo-footer-tablet"></use>
         </svg>
-        <svg class="page-footer__logo-desktop">
-          <use xlink:href="img/sprites/sprite.svg#logotype-footer-desktop"></use>
+        <svg class="footer-logo__icon--desktop">
+          <use xlink:href="img/sprites/sprite.svg#logo-footer-desktop"></use>
         </svg>
       </a>
       <ul class="footer-social__list social">
-        <li class="social__item"><a href="#" class="social__link social__link--twitter "><span
-              class="visually-hidden">Мы в Twitter</span></a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--facebook"><span
-              class="visually-hidden">Мы в Facebook</span></a></li>
-        <li class="social__item"><a href="#" class="social__link social__link--youtube"><span class="visually-hidden">Мы
-              на Youtube</span></a></li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter">
+            <span class="visually-hidden">Мы в Twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">
+            <span class="visually-hidden">Мы в Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">
+            <span class="visually-hidden">Мы на Youtube</span>
+          </a>
+        </li>
       </ul>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__logo-icon">
             <use xlink:href="img/sprites/sprite.svg#html-academy-logo"></use>
           </svg>
-          <span class="visually-hidden">HTML
-            Academy</span>
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer> -->

@@ -9,5 +9,9 @@ $burger-menu: linear-gradient(to bottom, #ffffff, #ffffff 4px, transparent 4px, 
 
 $burger-menu-hover: linear-gradient(to bottom, $color-pink, $color-pink 4px, transparent 4px, transparent 10px, $color-pink 10px, $color-pink 14px, transparent 14px, transparent 20px, $color-pink 20px);
 
+$menu-gradient-mobile: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 66px, transparent 66px);
+
+$menu-gradient: linear-gradient(to bottom, rgba(#000000, 0.3), rgba(#000000, 0.3) 110px, transparent 110px);
+
 $tablet-screen: 660px;
 $desktop-screen: 1000px;
