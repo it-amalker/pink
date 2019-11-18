@@ -145,6 +145,49 @@
       <p class="photo-posts__intro photo-posts__intro--afterwords">Затмите их всех! <br>Выкладывайте все, что накопилось
         в телефоне!</p>
     </section>
+    <section class="photo-editor">
+      <div class="photo-editor__wrapper">
+        <div class="photo-editor__img-wrap">
+          <img class="photo-editor__img" src="img/photo-editor.jpg" alt="Зимняя дорога">
+        </div>
+        <div class="tools">
+          <ul class="tools__list">
+            <li class="tools__item">
+              <button class="tools__button">
+                <svg class="tools__button-icon tools__button-icon--crop tools__button-icon--active">
+                  <use xlink:href="img/sprites/sprite.svg#crop-icon"></use>
+                </svg>
+              </button>
+              <div class="range range--active">
+                <div class="range__control range__control--crop-position"></div>
+              </div>
+            </li>
+            <li class="tools__item">
+              <button class="tools__button">
+                <svg class="tools__button-icon tools__button-icon--fill">
+                  <use xlink:href="img/sprites/sprite.svg#fill-icon"></use>
+                </svg>
+              </button>
+              <div class="range">
+                <div class="range__control range__control--fill-position"></div>
+              </div>
+            </li>
+            <li class="tools__item">
+              <button class="tools__button">
+                <svg class="tools__button-icon tools__button-icon--contrast">
+                  <use xlink:href="img/sprites/sprite.svg#contrast-icon"></use>
+                </svg>
+              </button>
+              <div class="range">
+                <div class="range__control range__control--contrast-position"></div>
+              </div>
+            </li>
+          </ul>
+          <button class="tools__upload-button" type="button">Запостить</button>
+          <button class="tools__upload-button tools__upload-button--cancel" type="button">Отмена</button>
+        </div>
+      </div>
+    </section>
     <!-- <footer class="page-footer">
       <a href="#" class="footer-logo">
         <svg class="footer-logo__icon--tablet">
