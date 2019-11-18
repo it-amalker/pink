@@ -2042,8 +2042,9 @@ ul {
 
 .photo_posts__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
-  background-color: #f2f2f2;
 }
 
 .photo_posts__item:first-child {
@@ -2066,13 +2067,14 @@ ul {
 }
 
 .photo_posts__comment {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 18px 10px 52px 18px;
+  padding: 18px 10px 21px 18px;
+  background-color: #f2f2f2;
 }
 
 .photo_posts__author-name {
-  display: block;
   padding-bottom: 2px;
   font-size: 14px;
   color: #283645;
@@ -2089,14 +2091,14 @@ ul {
 .photo_posts__text {
   max-width: 240px;
   margin: 0;
+  padding-bottom: 7px;
   font-size: 14px;
   color: #283645;
 }
 
 .photo_posts__like-button {
-  position: absolute;
-  bottom: 20px;
-  left: 50px;
+  position: relative;
+  padding-left: 32px;
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
@@ -2107,8 +2109,7 @@ ul {
   content: "";
   position: absolute;
   top: 5px;
-  left: -32px;
-  display: block;
+  left: 0;
   width: 13px;
   height: 12px;
   background-image: url("../img/sprites/sprite.svg#heart-icon");
@@ -2146,7 +2147,6 @@ ul {
     justify-content: space-between;
   }
   .photo_posts__item {
-    position: relative;
     width: 300px;
   }
   .photo_posts__item:nth-child(-n + 3) {
@@ -2164,31 +2164,36 @@ ul {
     bottom: 18%;
   }
   .photo_posts__comment {
-    padding: 24px 10px 56px 27px;
+    padding: 24px 10px 24px 27px;
+    flex-grow: 1;
   }
   .photo_posts__comment--best {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 24px;
   }
   .photo_posts__author-name {
-    display: block;
     padding-bottom: 0;
   }
   .photo_posts__text {
     max-width: 240px;
   }
   .photo_posts__text--best {
+    order: 3;
     max-width: 510px;
   }
   .photo_posts__like-button {
-    bottom: 22px;
-    left: 28px;
+    margin-top: auto;
+    padding-left: 0;
   }
   .photo_posts__like-button::before {
     left: 227px;
   }
   .photo_posts__like-button--best {
-    top: 24px;
-    left: 473px;
+    width: 118px;
+    padding-right: 19px;
+    order: 2;
   }
   .photo_posts__like-button--best::before {
     top: 5px;
@@ -2231,17 +2236,11 @@ ul {
   .photo-posts__img {
     bottom: 0;
   }
-  .photo_posts__comment {
-    padding-bottom: 59px;
-  }
-  .photo_posts__comment--best {
-    padding-bottom: 24px;
-  }
   .photo_posts__text--best {
     max-width: 865px;
   }
   .photo_posts__like-button--best {
-    left: 790px;
+    padding-right: 21px;
   }
   .photo_posts__like-button--best::before {
     top: 5px;
