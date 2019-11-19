@@ -59,94 +59,100 @@
     <section class="contest-form">
       <h2 class="visually-hidden">Форма для заполнения</h2>
       <p class="form-intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
-        карту! Пожалуйста, заполните форму ниже:</p>
+        карту!<span class="form-intro__text"> Пожалуйста, заполните форму ниже:</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <ul class="full-name-group">
           <li class="full-name-group__item">
-            <input class="full-name-group__input" type="text" name="surname" id="surname"
+            <label class="full-name-group__label form__label" for="surname">Фамилия:</label>
+            <input class="full-name-group__input form__input" type="text" name="surname" id="surname"
               placeholder="Укажите фамилию *">
-            <label class="full-name-group__label" for="name">Имя:</label>
           </li>
           <li class="full-name-group__item">
-            <label class="full-name-group__label" for="surname">Фамилия:</label>
-            <input class="full-name-group__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            <label class="full-name-group__label form__label" for="name">Имя:</label>
+            <input class="full-name-group__input form__input" type="text" name="name" id="name"
+              placeholder="Введите ваше имя *">
           </li>
           <li class="full-name-group__item">
-            <label class="full-name-group__label" for="patronymic">Отчество:</label>
-            <input class="full-name-group__input" type="text" name="patronymic" id="patronymic"
+            <label class="full-name-group__label form__label" for="patronymic">Отчество:</label>
+            <input class="full-name-group__input form__input" type="text" name="patronymic" id="patronymic"
               placeholder="Ну и отчество тоже">
           </li>
         </ul>
-        <fielset class="achievements">
-          <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
+        <fieldset class="achievements achievements--gray">
+          <legend class="achievements__title form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="achievements__list">
             <li class="achievements__item">
-              <input class="achievements__checkbox" type="checkbox" name="achievement" id="shark" checked>
-              <label class="achievements__name" for="shark">Сделал селфи с акулой</label>
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="achievement" id="shark"
+                checked>
+              <label class="achievements__name form__label-switches" for="shark">Сделал селфи с акулой</label>
             </li>
             <li class="achievements__item">
-              <input class="achievements__checkbox" type="checkbox" name="achievement" id="burn" checked>
-              <label class="achievements__name" for="shark">Обгорел на пляже</label>
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="achievement" id="burn"
+                checked>
+              <label class="achievements__name form__label-switches" for="burn">Обгорел на пляже</label>
             </li>
             <li class="achievements__item">
-              <input class="achievements__checkbox" type="checkbox" name="achievement" id="norris">
-              <label class="achievements__name" for="norris">Видел Чака Норриса</label>
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="achievement" id="norris">
+              <label class="achievements__name form__label-switches" for="norris">Видел Чака Норриса</label>
             </li>
             <li class="achievements__item">
-              <input class="achievements__checkbox" type="checkbox" name="achievement" id="souvenir">
-              <label class="achievements__name" for="souvenir">Накупил сувениров</label>
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="achievement" id="souvenir">
+              <label class="achievements__name form__label-switches" for="souvenir">Накупил сувениров</label>
             </li>
             <li class="achievements__item">
-              <input class="achievements__checkbox" type="checkbox" name="achievement" id="tower" checked>
-              <label class="achievements__name" for="tower">Удержал башню</label>
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="achievement" id="tower"
+                checked>
+              <label class="achievements__name form__label-switches" for="tower">Удержал башню</label>
             </li>
             <li class="achievements__item">
-              <input class="achievements__checkbox" type="checkbox" name="achievement" id="hotel">
-              <label class="achievements__name" for="hotel">Разгромил отель</label>
+              <input class="achievements__checkbox visually-hidden" type="checkbox" name="achievement" id="hotel">
+              <label class="achievements__name form__label-switches" for="hotel">Разгромил отель</label>
             </li>
           </ul>
-        </fielset>
-        <fielset class="contacts">
-          <legend class="contacts__title">Контактная информация</legend>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <label class="contacts__label" for="phone">Номер телефона</label>
-              <input class="contacts__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+        </fieldset>
+        <fieldset class="contact-info">
+          <legend class="contact-info__title form__legend">Контактная информация</legend>
+          <ul class="contact-info__list">
+            <li class="contact-info__item">
+              <label class="contact-info__label form__label" for="phone">Номер телефона</label>
+              <input class="contact-info__input form__input " type="text" name="phone" id="phone"
+                placeholder="Номер, пожалуйста">
             </li>
-            <li class="contacts__item">
-              <label class="contacts__label" for="email">Адрес почты</label>
-              <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите почту *">
+            <li class="contact-info__item">
+              <label class="contact-info__label form__label" for="email">Адрес почты</label>
+              <input class="contact-info__input form__input " type="email" name="email" id="email"
+                placeholder="Введите почту *">
             </li>
-        </fielset>
-        <fielset class="app-platform">
-          <legend class="app-platform__title">С каким приложением
-            путешествовали?</legend>
+        </fieldset>
+        <fieldset class="app-platform app-platform--gray">
+          <legend class="app-platform__title form__legend">С каким приложением путешествовали?</legend>
           <ul class="app-platform__list">
             <li class="app-platform__item">
-              <input class="app-platform__radio" type="checkbox" name="platform" id="ios" checked>
-              <label class="app-platform__name" for="ios">Pink для iOS</label>
+              <input class="app-platform__radio visually-hidden" type="radio" name="platform" id="ios" checked>
+              <label class="app-platform__name form__label-switches" for="ios">Pink для iOS</label>
             </li>
             <li class="app-platform__item">
-              <input class="app-platform__radio" type="checkbox" name="platform" id="android">
-              <label class="app-platform__name" for="android">Pink на Android</label>
+              <input class="app-platform__radio visually-hidden" type="radio" name="platform" id="android">
+              <label class="app-platform__name form__label-switches" for="android">Pink на Android</label>
             </li>
             <li class="app-platform__item">
-              <input class="app-platform__radio" type="checkbox" name="platform" id="windows">
-              <label class="app-platform__name" for="windows">Windows Phone</label>
+              <input class="app-platform__radio visually-hidden" type="radio" name="platform" id="windows">
+              <label class="app-platform__name form__label-switches" for="windows">Windows Phone</label>
             </li>
           </ul>
-        </fielset>
-        <fielset class="emotions">
-          <legend class="emotions__title">Опишите свои эмоции</legend>
-          <textarea class="emotion__message" name="message" id="message"
+        </fieldset>
+        <fieldset class="emotions">
+          <legend class="emotions__title form__legend">Опишите свои эмоции</legend>
+          <textarea class="emotion__message form__input" name="message" id="message"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fielset>
-        <button type="submit">Отправить форму</button>
+        </fieldset>
+        <button class="contest-form__button contest-form__button-position" type="submit">Отправить
+          форму</button>
         <p class="notice-text"><span class="notice-text__asterisk">*</span> — обязательные поля</p>
       </form>
     </section>
 
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <a href="#" class="page-footer-logo footer-logo">
         <svg class="footer-logo__icon--tablet">
           <use xlink:href="img/sprites/sprite.svg#logo-footer-tablet"></use>
@@ -181,7 +187,7 @@
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
-    </footer> -->
+    </footer>
   </main>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
