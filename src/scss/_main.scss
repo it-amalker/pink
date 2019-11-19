@@ -226,7 +226,7 @@
 
       background-size: cover;
 
-      background-position: -119px 19;
+      background-position: -119px 19px;
     }
   }
 
@@ -2023,7 +2023,7 @@
 
 
 
-.page-header--photo {
+.page-header--inner-page {
   height: 237px;
 
   &::before {
@@ -2045,7 +2045,7 @@
 }
 
 @media (min-width: $tablet-screen) {
-  .page-header--photo {
+  .page-header--inner-page {
     height: 440px;
 
     background-size: 200%;
@@ -2062,7 +2062,7 @@
 }
 
 @media (min-width: $desktop-screen) {
-  .page-header--photo {
+  .page-header--inner-page {
     height: 394px;
   }
 
@@ -2814,5 +2814,40 @@
     &--cancel {
       margin-left: 39px;
     }
+  }
+}
+
+
+
+
+/* FORM.HTML */
+
+
+
+// Header section
+
+
+
+
+
+.page-header__title--form-page {
+  max-width: 230px;
+  padding: 29px 0 46px 0;
+}
+
+@media (min-width: $tablet-screen) {
+
+  .page-header__title {
+    max-width: 475px;
+    padding: 72px 0 80px 0;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+
+  .page-header__title {
+    max-width: 750px;
+    padding: 65px 0 101px 0;
+
   }
 }

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конкурс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header page-header--inner-page">
+    <div class="page-header__wrapper">
+      <div class="page-header__nav-wrapper">
+        <div class="logo">
+          <a href="index.html" class="logo__icon">
+            <svg class="logo__icon--mobile">
+              <use xlink:href="img/sprites/sprite.svg#logo-header-mobile"></use>
+            </svg>
+            <svg class="logo__icon--tablet">
+              <use xlink:href="img/sprites/sprite.svg#logo-header-tablet"></use>
+            </svg>
+            <svg class="logo__icon--desktop">
+              <use xlink:href="img/sprites/sprite.svg#logo-header-desktop"></use>
+            </svg>
+          </a>
+          <button class="logo__button-nav-open" type="button"></button>
+          <button class="logo__button-nav-close" type="button">
+            <svg class="logo__button-nav-close-icon">
+              <use xlink:href="img/sprites/sprite.svg#cross-button"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list menu">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu__item menu__item--active">
+              <a class="menu__link menu__link--active">Конкурс</a>
+            </li>
+            <li class="menu__item">
+              <a href="https://htmlacademy.ru/" class="menu__link">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="page-header__title page-header__title--form-page">Конкурс на самое безбашенное путешествие с Пинк</p>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Страница конкурса</h1>
+
+    <section class="contest-form">
+      <h2 class="visually-hidden">Форма для заполнения</h2>
+      <p class="form-intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
+        карту! Пожалуйста, заполните форму ниже:</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <ul class="full-name-group">
+          <li class="full-name-group__item">
+            <input class="full-name-group__input" type="text" name="surname" id="surname"
+              placeholder="Укажите фамилию *">
+            <label class="full-name-group__label" for="name">Имя:</label>
+          </li>
+          <li class="full-name-group__item">
+            <label class="full-name-group__label" for="surname">Фамилия:</label>
+            <input class="full-name-group__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+          </li>
+          <li class="full-name-group__item">
+            <label class="full-name-group__label" for="patronymic">Отчество:</label>
+            <input class="full-name-group__input" type="text" name="patronymic" id="patronymic"
+              placeholder="Ну и отчество тоже">
+          </li>
+        </ul>
+        <fielset class="achievements">
+          <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="achievements__list">
+            <li class="achievements__item">
+              <input class="achievements__checkbox" type="checkbox" name="achievement" id="shark" checked>
+              <label class="achievements__name" for="shark">Сделал селфи с акулой</label>
+            </li>
+            <li class="achievements__item">
+              <input class="achievements__checkbox" type="checkbox" name="achievement" id="burn" checked>
+              <label class="achievements__name" for="shark">Обгорел на пляже</label>
+            </li>
+            <li class="achievements__item">
+              <input class="achievements__checkbox" type="checkbox" name="achievement" id="norris">
+              <label class="achievements__name" for="norris">Видел Чака Норриса</label>
+            </li>
+            <li class="achievements__item">
+              <input class="achievements__checkbox" type="checkbox" name="achievement" id="souvenir">
+              <label class="achievements__name" for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="achievements__item">
+              <input class="achievements__checkbox" type="checkbox" name="achievement" id="tower" checked>
+              <label class="achievements__name" for="tower">Удержал башню</label>
+            </li>
+            <li class="achievements__item">
+              <input class="achievements__checkbox" type="checkbox" name="achievement" id="hotel">
+              <label class="achievements__name" for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fielset>
+        <fielset class="contacts">
+          <legend class="contacts__title">Контактная информация</legend>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__label" for="phone">Номер телефона</label>
+              <input class="contacts__input" type="text" name="phone" id="phone" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="contacts__item">
+              <label class="contacts__label" for="email">Адрес почты</label>
+              <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите почту *">
+            </li>
+        </fielset>
+        <fielset class="app-platform">
+          <legend class="app-platform__title">С каким приложением
+            путешествовали?</legend>
+          <ul class="app-platform__list">
+            <li class="app-platform__item">
+              <input class="app-platform__radio" type="checkbox" name="platform" id="ios" checked>
+              <label class="app-platform__name" for="ios">Pink для iOS</label>
+            </li>
+            <li class="app-platform__item">
+              <input class="app-platform__radio" type="checkbox" name="platform" id="android">
+              <label class="app-platform__name" for="android">Pink на Android</label>
+            </li>
+            <li class="app-platform__item">
+              <input class="app-platform__radio" type="checkbox" name="platform" id="windows">
+              <label class="app-platform__name" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fielset>
+        <fielset class="emotions">
+          <legend class="emotions__title">Опишите свои эмоции</legend>
+          <textarea class="emotion__message" name="message" id="message"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fielset>
+        <button type="submit">Отправить форму</button>
+        <p class="notice-text"><span class="notice-text__asterisk">*</span> — обязательные поля</p>
+      </form>
+    </section>
+
+    <!-- <footer class="page-footer">
+      <a href="#" class="page-footer-logo footer-logo">
+        <svg class="footer-logo__icon--tablet">
+          <use xlink:href="img/sprites/sprite.svg#logo-footer-tablet"></use>
+        </svg>
+        <svg class="footer-logo__icon--desktop">
+          <use xlink:href="img/sprites/sprite.svg#logo-footer-desktop"></use>
+        </svg>
+      </a>
+      <ul class="footer-social__list social social--mobile">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter">
+            <span class="visually-hidden">Мы в Twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">
+            <span class="visually-hidden">Мы в Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">
+            <span class="visually-hidden">Мы на Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__logo-icon">
+            <use xlink:href="img/sprites/sprite.svg#html-academy-logo"></use>
+          </svg>
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </footer> -->
+  </main>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
