@@ -60,7 +60,7 @@
       <h2 class="visually-hidden">Форма для заполнения</h2>
       <p class="form-intro">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
         карту!<span class="form-intro__text"> Пожалуйста, заполните форму ниже:</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="form form-position" action="https://echo.htmlacademy.ru" method="post">
         <ul class="full-name-group">
           <li class="full-name-group__item">
             <label class="full-name-group__label form__label" for="surname">Фамилия:</label>
@@ -115,13 +115,15 @@
           <ul class="contact-info__list">
             <li class="contact-info__item">
               <label class="contact-info__label form__label" for="phone">Номер телефона</label>
-              <input class="contact-info__input form__input " type="text" name="phone" id="phone"
-                placeholder="Номер, пожалуйста">
+              <span class="contact-info__input-wrap contact-info__input-wrap--phone"><input
+                  class="contact-info__input form__input form__input--contact-info" type="text" name="phone" id="phone"
+                  placeholder="Номер, пожалуйста"></span>
             </li>
             <li class="contact-info__item">
               <label class="contact-info__label form__label" for="email">Адрес почты</label>
-              <input class="contact-info__input form__input " type="email" name="email" id="email"
-                placeholder="Введите почту *">
+              <span class="contact-info__input-wrap contact-info__input-wrap--email"><input
+                  class="contact-info__input form__input form__input--contact-info" type="email" name="email" id="email"
+                  placeholder="Введите почту *"></span>
             </li>
         </fieldset>
         <fieldset class="app-platform app-platform--gray">
@@ -146,9 +148,11 @@
           <textarea class="emotion__message form__input" name="message" id="message"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button class="contest-form__button contest-form__button-position" type="submit">Отправить
-          форму</button>
-        <p class="notice-text"><span class="notice-text__asterisk">*</span> — обязательные поля</p>
+        <div class="contest-form__button-wrap">
+          <button class="contest-form__button contest-form__button-position" type="submit">Отправить
+            форму</button>
+          <p class="notice-text"><span class="notice-text__asterisk">*</span> — обязательные поля</p>
+        </div>
       </form>
     </section>
 
