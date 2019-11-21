@@ -451,6 +451,7 @@ ul {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .logo__button-nav-close-icon {
@@ -476,7 +477,7 @@ ul {
   margin-bottom: -256px;
 }
 
-.menu__item__item {
+.menu__item {
   text-align: center;
 }
 
@@ -492,20 +493,12 @@ ul {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 #000000;
 }
 
-.menu__link:hover {
+.menu__link[href]:hover {
   color: #d22856;
 }
 
-.menu__link--active:hover {
-  color: #ffffff;
-}
-
-.menu__link:active {
+.menu__link[href]:active {
   color: rgba(210, 40, 86, 0.3);
-}
-
-.menu__link--active:active {
-  color: #ffffff;
 }
 
 @media (min-width: 660px) {
@@ -601,20 +594,12 @@ ul {
     display: flex;
     justify-content: space-between;
   }
-  .menu__link {
-    display: block;
-    padding: 16px 0;
-    line-height: 32px;
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #283645;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 #000000;
-  }
   .menu {
     display: flex;
     justify-content: space-between;
+  }
+  .menu__item--active {
+    background-image: linear-gradient(to bottom, transparent 75px, #ffffff 75px, #ffffff 77px, transparent 77px);
   }
   .menu__link {
     display: block;
@@ -625,14 +610,8 @@ ul {
     background-color: transparent;
     box-shadow: none;
   }
-  .menu__link:active {
+  .menu__link[href]:active {
     color: rgba(255, 255, 255, 0.3);
-  }
-  .menu__link--active:active {
-    color: #ffffff;
-  }
-  .menu__item--active {
-    background-image: linear-gradient(to bottom, transparent 75px, #ffffff 75px, #ffffff 77px, transparent 77px);
   }
 }
 
@@ -2510,6 +2489,9 @@ ul {
     padding-top: 0;
     width: 16px;
     height: 16px;
+  }
+  .tools__button-icon:hover {
+    fill: #d22856;
   }
   .range {
     position: relative;
