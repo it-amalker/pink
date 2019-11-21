@@ -62,7 +62,12 @@
         ваших?</p>
       <div class="photo-posts__best">
         <a href="#">
-          <img class="photo-posts__best-img" src="img/photo-post-1-best.jpg" alt="Панорама дня">
+          <picture>
+            <source media="(min-width: 1000px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photo-posts__best-img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+              alt="Панорама дня">
+          </picture>
         </a>
       </div>
       <ul class="photo-posts__list">
@@ -80,7 +85,13 @@
         <li class="photo_posts__item">
           <div class="photo-posts__img-wrap">
             <a href="#">
-              <img class="photo-posts__img" src="img/photo-post-2.jpg" alt="Телескоп">
+              <picture>
+                <source media="(min-width: 1000px)"
+                  srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="photo-posts__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+                  alt="Телескоп">
+              </picture>
             </a>
           </div>
           <blockquote class="photo_posts__comment">
@@ -93,7 +104,13 @@
         <li class="photo_posts__item">
           <div class="photo-posts__img-wrap">
             <a href="#">
-              <img class="photo-posts__img" src="img/photo-post-3.jpg" alt="Барабанная установка">
+              <picture>
+                <source media="(min-width: 1000px)"
+                  srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="photo-posts__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+                  alt="Барабанная установка">
+              </picture>
             </a>
           </div>
           <blockquote class="photo_posts__comment">
@@ -106,7 +123,13 @@
         <li class="photo_posts__item">
           <div class="photo-posts__img-wrap">
             <a href="#">
-              <img class="photo-posts__img" src="img/photo-post-4.jpg" alt="Окна">
+              <picture>
+                <source media="(min-width: 1000px)"
+                  srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="photo-posts__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+                  alt="Окна">
+              </picture>
             </a>
           </div>
           <blockquote class="photo_posts__comment">
@@ -119,7 +142,13 @@
         <li class="photo_posts__item">
           <div class="photo-posts__img-wrap">
             <a href="#">
-              <img class="photo-posts__img" src="img/photo-post-5.jpg" alt="Кубанская бахча">
+              <picture>
+                <source media="(min-width: 1000px)"
+                  srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img class="photo-posts__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+                  alt="Кубанская бахча">
+              </picture>
             </a>
           </div>
           <blockquote class="photo_posts__comment">
@@ -132,7 +161,13 @@
         <li class="photo_posts__item">
           <div class="photo-posts__img-wrap">
             <a href="#">
-              <img class="photo-posts__img" src="img/photo-post-6.jpg" alt="В горах">
+              <picture>
+                <source media="(min-width: 1000px)"
+                  srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <img class="photo-posts__img" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"
+                  alt="В горах">
+              </picture>
             </a>
           </div>
           <blockquote class="photo_posts__comment">
@@ -145,7 +180,13 @@
         <li class="photo_posts__item">
           <div class="photo-posts__img-wrap">
             <a href="#">
-              <img class="photo-posts__img" src="img/photo-post-7.jpg" alt="Вид из самолета">
+              <picture>
+                <source media="(min-width: 1000px)"
+                  srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <img class="photo-posts__img" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x"
+                  alt="Вид из самолета">
+              </picture>
             </a>
           </div>
           <blockquote class="photo_posts__comment">
@@ -162,9 +203,14 @@
     <section class="photo-editor">
       <div class="photo-editor__wrapper">
         <div class="photo-editor__img-wrap">
-          <img class="photo-editor__img" src="img/photo-editor.jpg" alt="Зимняя дорога">
+          <picture>
+            <source media="(min-width: 660px)"
+              srcset="img/photo-editor-tablet@1x.jpg 1x, photo-editor-tablet@2x.jpg 2x">
+            <img class="photo-editor__img" src="img/photo-editor-mobile@1x.jpg"
+              srcset="img/photo-editor-mobile@2x.jpg 2x" alt="Зимняя дорога">
+          </picture>
         </div>
-        <div class="tools">
+        <div class=" tools">
           <ul class="tools__list">
             <li class="tools__item">
               <button class="tools__button">
