@@ -428,13 +428,17 @@ ul {
 
 .logo__button-nav-open {
   position: relative;
-  display: block;
+  display: none;
   width: 50px;
   height: 24px;
   background-color: transparent;
   background-image: linear-gradient(to bottom, #ffffff, #ffffff 4px, transparent 4px, transparent 10px, #ffffff 10px, #ffffff 14px, transparent 14px, transparent 20px, #ffffff 20px);
   border: none;
   cursor: pointer;
+}
+
+.logo__button-nav-open--active {
+  display: block;
 }
 
 .logo__button-nav-open:hover {
@@ -452,6 +456,10 @@ ul {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.logo__button-nav-close--active {
+  display: block;
 }
 
 .logo__button-nav-close-icon {
@@ -472,9 +480,13 @@ ul {
   position: relative;
   z-index: 3;
   display: none;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: -256px;
+}
+
+.main-nav--active {
+  display: block;
 }
 
 .menu__item {
@@ -1975,7 +1987,7 @@ ul {
 }
 
 .page-header--inner-page::before {
-  background-image: none;
+  display: none;
 }
 
 .page-header__title {
