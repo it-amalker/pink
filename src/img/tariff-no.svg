@@ -1,31 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 35.668667 35.668667"
-   height="35.668667"
-   width="35.668667"
-   xml:space="preserve"
-   id="svg2"
-   version="1.1"><metadata
-     id="metadata8"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-     id="defs6"><clipPath
-       id="clipPath18"
-       clipPathUnits="userSpaceOnUse"><path
-         id="path16"
-         d="M 0,26.751 H 26.751 V 0 H 0 Z" /></clipPath></defs><g
-     transform="matrix(1.3333333,0,0,-1.3333333,0,35.668667)"
-     id="g10"><g
-       id="g12"><g
-         clip-path="url(#clipPath18)"
-         id="g14"><g
-           transform="translate(15.4976,13.375)"
-           id="g20"><path
-             id="path22"
-             style="fill:#f25b26;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             d="m 0,0 10.814,10.814 c 0.586,0.585 0.586,1.535 0,2.121 -0.585,0.586 -1.535,0.586 -2.121,0 L -2.121,2.121 -12.935,12.937 c -0.586,0.586 -1.535,0.586 -2.121,0 -0.586,-0.585 -0.586,-1.535 0,-2.121 L -4.242,0.001 -15.058,-10.814 c -0.586,-0.586 -0.586,-1.536 0,-2.122 0.293,-0.293 0.677,-0.438 1.061,-0.438 0.384,0 0.768,0.145 1.061,0.438 L -2.121,-2.121 8.693,-12.936 c 0.293,-0.293 0.677,-0.439 1.061,-0.439 0.384,0 0.767,0.146 1.06,0.439 0.586,0.586 0.586,1.536 0,2.122 z" /></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="35.669" height="35.669">
+  <defs/>
+  <defs>
+    <clipPath id="a" clipPathUnits="userSpaceOnUse">
+      <path d="M0 26.751h26.751V0H0z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 35.669)">
+    <path fill="#f25b26" d="M15.498 13.375l10.814 10.814a1.5 1.5 0 11-2.121 2.121L13.377 15.496 2.563 26.312a1.5 1.5 0 11-2.121-2.121l10.814-10.815L.44 2.561A1.5 1.5 0 112.562.439l10.815 10.815L24.19.439A1.495 1.495 0 0125.25 0a1.5 1.5 0 011.06 2.561z"/>
+  </g>
+</svg>
