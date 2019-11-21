@@ -3764,6 +3764,10 @@
 
   box-shadow: 0 7px 15px rgba(#000101, 0.15);
 
+  &--active {
+    display: block;
+  }
+
   &--fail {
     display: none;
     height: 289px;
