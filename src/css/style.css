@@ -901,7 +901,6 @@ img {
 }
 
 .features__slogan {
-  display: block;
   max-width: 220px;
   margin: 0 auto;
   padding-bottom: 36px;
@@ -2147,7 +2146,6 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #283645;
-  font-weight: normal;
 }
 
 .copyright__logo-icon {
