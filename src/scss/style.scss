@@ -1,8 +1,11 @@
-@import "vars";
-@import "libs";
-@import "global";
-@import "mixins";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "base/libs";
+@import "base/global";
 
-@import "main";
 
-@import "media";
+@import "components/page-header";
+@import "components/main";
+
+
+

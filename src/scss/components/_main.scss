@@ -1,42 +1,7 @@
 // HEADER NAVIGATION BLOCK /////
 
 
-.page-header {
-  position: relative;
 
-  display: block;
-
-  background-image: $menu-gradient-mobile, url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: $menu-gradient-mobile, url("../img/bg-back-mobile@2x.jpg");
-    background-size: 700px auto;
-  }
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    bottom: 274px;
-    left: 50%;
-    z-index: 1;
-
-    width: 256px;
-    height: 286px;
-    margin-left: -128px;
-
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/iphone-hand-mobile@2x.png");
-      background-size: 258px auto;
-    }
-  }
-}
 
 .logo {
   display: flex;
@@ -75,7 +40,7 @@
   }
 }
 
-.logo__button-nav-open {
+.button-nav-open {
   position: relative;
 
   display: none;
@@ -102,7 +67,7 @@
   }
 }
 
-.logo__button-nav-close {
+.button-nav-close {
   display: none;
   padding: 0;
 
@@ -114,20 +79,20 @@
   &--active {
     display: block;
   }
+}
 
-  &-icon {
-    width: 24px;
-    height: 23px;
+.button-nav-close__icon {
+  width: 24px;
+  height: 23px;
 
-    fill: #ffffff;
+  fill: #ffffff;
 
-    &:hover {
-      fill: $color-pink;
-    }
+  &:hover {
+    fill: $color-pink;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -173,36 +138,6 @@
 }
 
 @media (min-width: $tablet-screen) {
-  .page-header {
-    background-image: $menu-gradient, url("../img/bg-back-tablet@1x.jpg");
-    background-size: cover;
-    background-position: center;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: $menu-gradient, url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto;
-    }
-
-    &::before {
-      bottom: 0;
-
-      width: 700px;
-      height: 545px;
-      margin-left: -350px;
-
-      background-image: url("../img/iphone-hand-tablet@1x.png");
-      background-position: 0 0;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/iphone-hand-tablet@2x.png");
-        background-size: 700px auto;
-      }
-    }
-  }
-
-  .page-header__wrapper {
-    @include container-tablet;
-  }
 
   .logo {
     min-height: 110px;
@@ -237,34 +172,6 @@
 }
 
 @media (min-width: $desktop-screen) {
-  .page-header {
-    background-image: $menu-gradient, url("../img/bg-back-desktop@1x.jpg");
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: $menu-gradient, url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px auto;
-    }
-
-    &::before {
-      bottom: 0;
-
-      width: 1050px;
-      height: 645px;
-      margin-left: -525px;
-
-      background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-position: 0 0;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/iphone-hand-desktop@2x.png");
-        background-size: 1050px auto;
-      }
-    }
-  }
-
-  .page-header__wrapper {
-    @include container-desktop;
-  }
 
   .logo {
     width: 150px;
@@ -302,7 +209,7 @@
     display: block;
   }
 
-  .logo__button-nav {
+  .button-nav {
     &-open,
     &-close {
       display: none;
@@ -2079,59 +1986,6 @@
 
 
 
-.page-header--inner-page {
-  height: 237px;
-
-  &::before {
-    display: none;
-  }
-}
-
-.page-header__title {
-  display: block;
-  max-width: 175px;
-  margin: 0 auto;
-  padding: 32px 0 83px 0;
-
-  font-size: 24px;
-  line-height: 1.2;
-  color: #ffffff;
-  font-weight: 300;
-  text-align: center;
-}
-
-@media (min-width: $tablet-screen) {
-  .page-header--inner-page {
-    height: 440px;
-
-    background-size: 200%;
-
-    background-position: center top;
-  }
-
-  .page-header__title {
-    max-width: 355px;
-    padding: 71px 0 139px 0;
-
-    font-size: 50px;
-  }
-}
-
-@media (min-width: $desktop-screen) {
-  .page-header--inner-page {
-    height: 394px;
-  }
-
-  .page-header__title {
-    max-width: 355px;
-    padding: 64px 0 100px 0;
-
-    font-size: 50px;
-  }
-}
-
-
-
 
 
 // Photo-posts section
@@ -2875,28 +2729,6 @@
 
 
 
-
-.page-header__title--form-page {
-  max-width: 230px;
-  padding: 29px 0 46px 0;
-}
-
-@media (min-width: $tablet-screen) {
-
-  .page-header__title {
-    max-width: 475px;
-    padding: 72px 0 80px 0;
-  }
-}
-
-@media (min-width: $desktop-screen) {
-
-  .page-header__title {
-    max-width: 750px;
-    padding: 65px 0 101px 0;
-
-  }
-}
 
 
 

@@ -21,12 +21,12 @@ gulp.task('css-libs', function () {
     'node_modules/normalize.css/normalize.css'
   ])
     .pipe(concat('_libs.scss'))
-    .pipe(gulp.dest('src/scss'))
+    .pipe(gulp.dest('src/scss/base'))
     .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('scss', function () {
-  return gulp.src('src/scss/*.scss')
+  return gulp.src('src/scss/**/*.scss')
     .pipe(sass({ outputStyle: 'expanded' }))
     /*
     .pipe(sass({ outputStyle: 'compressed' }))
@@ -123,7 +123,7 @@ gulp.task('svgSpriteBuild', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('src/scss/*.scss', gulp.parallel('scss'))
+  gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'))
   gulp.watch('src/*.html', gulp.parallel('html'))
   gulp.watch('src/*.js', gulp.parallel('js'))
   gulp.watch('src/img/*.*', gulp.parallel('img'))
