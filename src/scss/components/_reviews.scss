@@ -1,0 +1,133 @@
+.reviews {
+  position: relative;
+}
+
+.reviews__wrapper {
+  padding-top: 43px;
+  padding-bottom: 87px;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 17px;
+
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+.reviews__text {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-blue;
+  text-align: center;
+}
+
+.reviews__author-info {
+  display: none;
+}
+
+.reviews__toggles {
+  position: absolute;
+  bottom: 42px;
+  left: 50%;
+}
+
+@media (min-width: $tablet-screen) {
+  .reviews__wrapper {
+    padding-top: 100px;
+    padding-bottom: 66px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .reviews__author-name {
+    order: 2;
+    padding-bottom: 3px;
+
+    font-size: 20px;
+  }
+
+  .reviews__text {
+    order: 1;
+    max-width: 620px;
+    padding-bottom: 34px;
+
+    font-size: 18px;
+  }
+
+  .reviews__author-info {
+    display: block;
+    margin: 0;
+    order: 3;
+
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-blue;
+    text-align: center;
+  }
+
+  .reviews__toggles {
+    bottom: 21px;
+  }
+}
+
+@media (min-width: $desktop-screen) {
+  .reviews__wrapper {
+    position: relative;
+
+    padding-top: 186px;
+    padding-bottom: 41px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 72px;
+      left: 50%;
+
+      width: 77px;
+      height: 63px;
+
+      background-image: url("../img/sprites/sprite.svg#quotes");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      transform: translateX(-50%);
+    }
+  }
+
+  .reviews__author-name {
+    padding-bottom: 3px;
+
+    font-size: 24px;
+  }
+
+  .reviews__text {
+    max-width: 690px;
+    padding-bottom: 35px;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+}

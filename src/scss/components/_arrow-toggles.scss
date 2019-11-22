@@ -1,0 +1,66 @@
+.slider-arrows {
+  display: none;
+}
+
+@media (min-width: $desktop-screen) {
+
+  .reviews__arrow-toggles {
+    position: relative;
+  }
+
+  .slider-arrows {
+    display: block;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .slider-arrows__switch {
+    position: absolute;
+    top: -153px;
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+
+    border: 3px solid rgba($color-blue, 0.3);
+
+    cursor: pointer;
+
+    &--next {
+      right: 0;
+      border-left-color: transparent;
+      border-top-color: transparent;
+
+      transform: rotate(-45deg);
+    }
+
+    &--back {
+      left: 0;
+      border-right-color: transparent;
+      border-top-color: transparent;
+
+      transform: rotate(45deg);
+    }
+
+    &--next:hover {
+      border-right-color: rgba($color-blue, 0.6);
+      border-bottom-color: rgba($color-blue, 0.6);
+    }
+
+    &--back:hover {
+      border-left-color: rgba($color-blue, 0.6);
+      border-bottom-color: rgba($color-blue, 0.6);
+    }
+
+    &--next:active {
+      border-right-color: rgba($color-blue, 0.1);
+      border-bottom-color: rgba($color-blue, 0.1);
+    }
+
+    &--back:active {
+      border-left-color: rgba($color-blue, 0.1);
+      border-bottom-color: rgba($color-blue, 0.1);
+    }
+  }
+}

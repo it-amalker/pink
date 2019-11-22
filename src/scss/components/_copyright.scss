@@ -1,0 +1,38 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__text {
+  margin-right: 15px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-blue;
+  font-weight: normal;
+}
+
+.copyright__logo-icon {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  fill: $color-pink;
+
+  &:hover {
+    fill: $color-blue;
+  }
+
+  &:active {
+    fill: rgba($color-blue, 0.3);
+  }
+}
+
+@media (min-width: $desktop-screen) {
+
+  .copyright__text {
+    margin-right: 14px;
+
+    font-size: 18px;
+  }
+}

@@ -4,8 +4,34 @@
 @import "base/global";
 
 
+// index.html
 @import "components/page-header";
-@import "components/main";
+@import "components/logo";
+@import "components/button-nav";
+@import "components/main-nav";
+@import "components/apps";
+@import "components/features";
+@import "components/research";
+@import "components/slider-toggles";
+@import "components/arrow-toggles";
+@import "components/reviews";
+@import "components/prices";
+@import "components/tariffs";
+@import "components/contacts";
+@import "components/page-footer";
+@import "components/social";
+@import "components/copyright";
+
+// photo.html
+@import "components/photo-posts";
+@import "components/photo-editor";
+@import "components/tools";
+@import "components/range";
+
+// form.html
+@import "components/contest-form";
+@import "components/modal-application";
+
 
 
 
