@@ -281,15 +281,16 @@
 }
 
 .app-platform__name {
+  position: relative;
+
+  padding-left: 69px;
+
   font-size: 18px;
 }
 
 .app-platform__radio {
 
   + .app-platform__name {
-    position: relative;
-
-    padding-left: 69px;
 
     &::before {
       content: "";
@@ -439,7 +440,7 @@
 @media (min-width: $tablet-screen) {
 
   .contest-form {
-    padding: 93px 0 53px 0;
+    padding: 93px 0 48px 0;
   }
 
   .form-intro {
@@ -461,19 +462,16 @@
     padding-top: 70px;
   }
 
-  .form__label-switches {
-    font-size: 18px;
-  }
-
   .form__input {
     width: 100%;
+    padding: 14px 19px 15px 19px;
 
     font-size: 18px;
   }
 
   .full-name-group {
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 58px;
     padding: 0;
 
   }
@@ -498,7 +496,7 @@
 
     order: 1;
     margin-bottom: 52px;
-    padding: 68px 0 54px 0;
+    padding: 48px 0 59px 0;
 
     border: 2px solid #e5e5e5;
 
@@ -528,10 +526,14 @@
     padding-left: 58px;
   }
 
+  .app-platform__name {
+    padding-left: 60px;
+  }
+
   .contact-info {
     order: 2;
-    margin-bottom: 65px;
-    padding: 45px 0 25px 0;
+    margin-bottom: 58px;
+    padding: 29px 0 25px 0;
 
     border: 2px solid #e5e5e5;
   }
@@ -539,8 +541,6 @@
   .contact-info__title {
     display: block;
     width: 260px;
-    margin: 0;
-    padding: 0;
   }
 
   .contact-info__list {
@@ -555,7 +555,7 @@
 
     width: 500px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 
 
     &:last-child {
@@ -627,8 +627,8 @@
     position: relative;
 
     order: 3;
-    margin-bottom: 65px;
-    padding: 52px 0 57px 0;
+    margin-bottom: 50px;
+    padding: 48px 0 54px 0;
 
     border: 2px solid #e5e5e5;
 
@@ -663,13 +663,17 @@
     }
   }
 
+  .achievements__name {
+    padding-left: 60px;
+  }
+
   .emotions {
     position: relative;
 
     order: 4;
     margin: 0;
     margin-bottom: 67px;
-    padding: 45px 0 51px 0;
+    padding: 31px 0 51px 0;
 
     border: 2px solid #e5e5e5;
   }
