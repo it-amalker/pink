@@ -430,7 +430,7 @@ img {
 
 .page-header__title--form-page {
   max-width: 230px;
-  padding: 29px 0 46px 0;
+  padding: 32px 0 55px 0;
 }
 
 @media (min-width: 660px) {
@@ -2860,6 +2860,7 @@ img {
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
 }
 
 .form-intro__text {
@@ -2901,7 +2902,7 @@ img {
   width: 280px;
   padding: 14px 21px 15px 21px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   color: #283645;
   border: 2px solid #e5e5e5;
@@ -2932,14 +2933,15 @@ img {
 }
 
 .full-name-group__label {
-  padding-left: 24px;
+  display: block;
+  padding-left: 22px;
   padding-bottom: 5px;
 }
 
 .achievements {
   position: relative;
   margin: 0;
-  padding: 113px 0 42px 0;
+  padding: 117px 0 46px 0;
   border: none;
 }
 
@@ -2949,8 +2951,9 @@ img {
 
 .achievements__title {
   position: absolute;
-  top: 34px;
+  top: 37px;
   left: 50%;
+  line-height: 18px;
   width: 220px;
   margin-left: -110px;
 }
@@ -2962,7 +2965,7 @@ img {
 }
 
 .achievements__item {
-  margin-bottom: 43px;
+  margin-bottom: 52px;
 }
 
 .achievements__item:last-child {
@@ -2971,13 +2974,14 @@ img {
 
 .achievements__name {
   position: relative;
-  padding-left: 71px;
+  padding-left: 69px;
+  font-size: 18px;
 }
 
 .achievements__checkbox + .achievements__name::before {
   content: "";
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 0;
   width: 35px;
   height: 35px;
@@ -2997,7 +3001,7 @@ img {
 .achievements__checkbox:checked + .achievements__name::after {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 3px;
   left: 8px;
   width: 16px;
   height: 4px;
@@ -3036,7 +3040,7 @@ img {
 }
 
 .contact-info__item {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 }
 
 .contact-info__item:last-child {
@@ -3044,13 +3048,15 @@ img {
 }
 
 .contact-info__label {
-  padding-bottom: 6px;
+  display: block;
+  padding-left: 22px;
+  padding-bottom: 5px;
 }
 
 .app-platform {
   position: relative;
   margin: 0;
-  padding: 109px 0 42px 0;
+  padding: 113px 0 46px 0;
   border: none;
 }
 
@@ -3060,10 +3066,11 @@ img {
 
 .app-platform__title {
   position: absolute;
-  top: 34px;
+  top: 38px;
   left: 50%;
   width: 180px;
   margin-left: -90px;
+  line-height: 18px;
 }
 
 .app-platform__list {
@@ -3073,22 +3080,26 @@ img {
 }
 
 .app-platform__item {
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 
 .app-platform__item:last-child {
   margin-bottom: 0;
 }
 
+.app-platform__name {
+  font-size: 18px;
+}
+
 .app-platform__radio + .app-platform__name {
   position: relative;
-  padding-left: 71px;
+  padding-left: 69px;
 }
 
 .app-platform__radio + .app-platform__name::before {
   content: "";
   position: absolute;
-  top: -10px;
+  top: -8px;
   left: 0;
   width: 35px;
   height: 35px;
@@ -3108,7 +3119,7 @@ img {
 .app-platform__radio:checked + .app-platform__name::after {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: 11px;
   width: 15px;
   height: 15px;

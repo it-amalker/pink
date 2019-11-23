@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: 30px;
   color: $color-blue;
+  text-align: center;
 }
 
 .form-intro__text {
@@ -51,7 +52,7 @@
   padding: 14px 21px 15px 21px;
   box-sizing: border-box;
 
-  font-size: 14px;
+  font-size: 18px;
   line-height: 30px;
   color: $color-blue;
 
@@ -85,7 +86,8 @@
 }
 
 .full-name-group__label {
-  padding-left: 24px;
+  display: block;
+  padding-left: 22px;
   padding-bottom: 5px;
 }
 
@@ -93,7 +95,7 @@
   position: relative;
 
   margin: 0;
-  padding: 113px 0 42px 0;
+  padding: 117px 0 46px 0;
 
   border: none;
 
@@ -104,9 +106,10 @@
 
 .achievements__title {
   position: absolute;
-  top: 34px;
+  top: 37px;
   left: 50%;
 
+  line-height: 18px;
   width: 220px;
   margin-left: -110px;
 }
@@ -116,7 +119,7 @@
 }
 
 .achievements__item {
-  margin-bottom: 43px;
+  margin-bottom: 52px;
 
   &:last-child {
     margin-bottom: 0;
@@ -126,7 +129,9 @@
 .achievements__name {
   position: relative;
 
-  padding-left: 71px;
+  padding-left: 69px;
+
+  font-size: 18px;
 }
 
 .achievements__checkbox {
@@ -137,7 +142,7 @@
       content: "";
 
       position: absolute;
-      top: -9px;
+      top: -8px;
       left: 0;
 
       width: 35px;
@@ -167,7 +172,7 @@
       content: "";
 
       position: absolute;
-      top: 1px;
+      top: 3px;
       left: 8px;
 
       width: 16px;
@@ -208,7 +213,6 @@
   }
 }
 
-
 .contact-info {
   position: relative;
 
@@ -227,7 +231,7 @@
 }
 
 .contact-info__item {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
 
   &:last-child {
     margin-bottom: 0;
@@ -235,14 +239,16 @@
 }
 
 .contact-info__label {
-  padding-bottom: 6px;
+  display: block;
+  padding-left: 22px;
+  padding-bottom: 5px;
 }
 
 .app-platform {
   position: relative;
 
   margin: 0;
-  padding: 109px 0 42px 0;
+  padding: 113px 0 46px 0;
 
   border: none;
 
@@ -253,11 +259,13 @@
 
 .app-platform__title {
   position: absolute;
-  top: 34px;
+  top: 38px;
   left: 50%;
 
   width: 180px;
   margin-left: -90px;
+
+  line-height: 18px;
 }
 
 .app-platform__list {
@@ -265,11 +273,15 @@
 }
 
 .app-platform__item {
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.app-platform__name {
+  font-size: 18px;
 }
 
 .app-platform__radio {
@@ -277,13 +289,13 @@
   + .app-platform__name {
     position: relative;
 
-    padding-left: 71px;
+    padding-left: 69px;
 
     &::before {
       content: "";
 
       position: absolute;
-      top: -10px;
+      top: -8px;
       left: 0;
 
       width: 35px;
@@ -313,7 +325,7 @@
       content: "";
 
       position: absolute;
-      top: 2px;
+      top: 4px;
       left: 11px;
 
       width: 15px;
