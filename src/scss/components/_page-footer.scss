@@ -74,6 +74,10 @@
     @include container-desktop;
     padding-top: 81px;
     padding-bottom: 72px;
+
+    &--form-page {
+      padding-top: 29px;
+    }
   }
 
   .page-footer-logo {

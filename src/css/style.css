@@ -535,7 +535,7 @@ img {
   }
   .page-header__title--form-page {
     max-width: 750px;
-    padding: 65px 0 101px 0;
+    padding: 63px 0 101px 0;
   }
 }
 
@@ -2108,6 +2108,9 @@ img {
     padding-top: 81px;
     padding-bottom: 72px;
   }
+  .page-footer--form-page {
+    padding-top: 29px;
+  }
   .page-footer-logo {
     margin-right: 234px;
     padding-bottom: 8px;
@@ -3204,6 +3207,10 @@ img {
   color: #d22856;
 }
 
+.notice-text__line {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .contest-form {
     padding: 93px 0 48px 0;
@@ -3437,20 +3444,19 @@ img {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    padding-top: 78px;
+    padding-top: 70px;
   }
   .full-name-group {
     width: 435px;
     margin: 0;
-    margin-bottom: 65px;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 14px;
   }
   .full-name-group__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
   .full-name-group__item:last-child {
     margin-bottom: 0;
@@ -3459,14 +3465,17 @@ img {
     position: relative;
     order: 1;
     width: 435px;
-    height: 313px;
-    margin-bottom: 52px;
-    padding: 41px 0 60px 0;
+    height: 308px;
+    margin-bottom: 51px;
+    padding: 50px 0 60px 0;
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
   }
   .app-platform--gray {
     background-color: #ffffff;
+  }
+  .app-platform__item {
+    margin-bottom: 44px;
   }
   .app-platform__title {
     position: relative;
@@ -3490,12 +3499,12 @@ img {
     width: 100%;
     height: 175px;
     box-sizing: border-box;
-    margin-bottom: 52px;
+    margin-bottom: 58px;
     padding: 28px 0 13px 0;
   }
   .contact-info__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -3504,37 +3513,49 @@ img {
     display: flex;
     flex-direction: column;
     width: 375px;
-    margin: 0 auto;
+    margin: 0;
+  }
+  .contact-info__label {
+    padding: 10px 0 0 16px;
   }
   .form__input--contact-info {
     width: 315px;
   }
   .achievements {
     width: 100%;
-    margin-bottom: 51px;
-    padding: 44px 0 59px 0;
+    margin-bottom: 52px;
+    padding: 48px 0 59px 0;
   }
   .achievements__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 820px;
     margin: 0 auto;
   }
   .achievements__item {
-    width: 260px;
+    width: 210px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+  .achievements__item:first-child {
+    margin-right: 54px;
+    width: 260px;
+  }
   .achievements__item:nth-child(2) {
     order: 4;
+    width: 260px;
+    margin-right: 54px;
   }
   .achievements__item:nth-child(3) {
     order: 2;
+    width: 245px;
+    margin-right: 51px;
   }
   .achievements__item:nth-child(4) {
     order: 5;
+    width: 245px;
+    margin-right: 51px;
   }
   .achievements__item:nth-child(5) {
     order: 3;
@@ -3557,6 +3578,9 @@ img {
     width: 820px;
     height: 128px;
     margin: 0 auto;
+  }
+  .notice-text__line {
+    display: inline;
   }
 }
 
