@@ -1,7 +1,7 @@
 .photo-posts__intro {
   max-width: 245px;
   margin: 0 auto;
-  padding: 46px 0;
+  padding: 44px 0 49px 0;
 
   font-size: 14px;
   line-height: 30px;
@@ -15,7 +15,7 @@
 .photo-posts__best {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 137px;
 
   overflow: hidden;
 
@@ -81,14 +81,12 @@
   flex-direction: column;
   margin: 0;
 
-  padding: 18px 10px 21px 18px;
+  padding: 18px 10px 19px 18px;
 
   background-color: #f2f2f2;
 }
 
 .photo_posts__author-name {
-  padding-bottom: 2px;
-
   font-size: 14px;
   color: $color-blue;
   font-weight: bold;
@@ -104,7 +102,7 @@
 .photo_posts__text {
   max-width: 240px;
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
 
   font-size: 14px;
   color: $color-blue;
@@ -138,7 +136,7 @@
 
 .photo-posts__intro--afterwords {
   max-width: 255px;
-  padding: 41px 0;
+  padding: 43px 0 41px 0;
 }
 
 @media (min-width: $tablet-screen) {

@@ -420,7 +420,7 @@ img {
   display: block;
   max-width: 175px;
   margin: 0 auto;
-  padding: 32px 0 83px 0;
+  padding: 30px 0 85px 0;
   font-size: 24px;
   line-height: 1.2;
   color: #ffffff;
@@ -2048,7 +2048,7 @@ img {
 }
 
 .page-footer-logo {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-logo__icon {
@@ -2074,7 +2074,7 @@ img {
 }
 
 .footer-social__list {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 @media (min-width: 660px) {
@@ -2236,7 +2236,7 @@ img {
 .photo-posts__intro {
   max-width: 245px;
   margin: 0 auto;
-  padding: 46px 0;
+  padding: 44px 0 49px 0;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
@@ -2247,7 +2247,7 @@ img {
 .photo-posts__best {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 137px;
   overflow: hidden;
 }
 
@@ -2306,12 +2306,11 @@ img {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 18px 10px 21px 18px;
+  padding: 18px 10px 19px 18px;
   background-color: #f2f2f2;
 }
 
 .photo_posts__author-name {
-  padding-bottom: 2px;
   font-size: 14px;
   color: #283645;
   font-weight: bold;
@@ -2327,7 +2326,7 @@ img {
 .photo_posts__text {
   max-width: 240px;
   margin: 0;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
   font-size: 14px;
   color: #283645;
 }
@@ -2355,7 +2354,7 @@ img {
 
 .photo-posts__intro--afterwords {
   max-width: 255px;
-  padding: 41px 0;
+  padding: 43px 0 41px 0;
 }
 
 @media (min-width: 660px) {
