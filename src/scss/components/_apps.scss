@@ -147,7 +147,7 @@
 
 @media (min-width: $desktop-screen) {
   .header-apps {
-    padding: 111px 0 112px 0;
+    padding: 111px 0 122px 0;
   }
 
   .apps__slogan {
@@ -165,9 +165,11 @@
 
   .apps__button {
     margin-bottom: 67px;
+
+    font-size: 21px;
   }
 
   .apps__list {
-    margin-bottom: 61px;
+    margin-bottom: 51px;
   }
 }

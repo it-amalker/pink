@@ -16,11 +16,11 @@
 
   .slider-arrows__switch {
     position: absolute;
-    top: -153px;
+    top: -156px;
 
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 33px;
+    height: 33px;
     background-color: transparent;
 
     border: 3px solid rgba($color-blue, 0.3);
@@ -28,7 +28,7 @@
     cursor: pointer;
 
     &--next {
-      right: 0;
+      right: 4px;
       border-left-color: transparent;
       border-top-color: transparent;
 
@@ -36,7 +36,7 @@
     }
 
     &--back {
-      left: 0;
+      left: 4px;
       border-right-color: transparent;
       border-top-color: transparent;
 

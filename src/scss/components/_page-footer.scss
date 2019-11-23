@@ -72,8 +72,13 @@
 
   .page-footer {
     @include container-desktop;
-    padding-top: 70px;
+    padding-top: 81px;
     padding-bottom: 72px;
+  }
+
+  .page-footer-logo {
+    margin-right: 234px;
+    padding-bottom: 8px;
   }
 
   .footer-logo__icon {

@@ -506,7 +506,7 @@ img {
     bottom: 0;
     width: 1050px;
     height: 645px;
-    margin-left: -525px;
+    margin-left: -455px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 0 0;
   }
@@ -726,6 +726,7 @@ img {
   .main-nav {
     display: block;
     width: 623px;
+    margin: 0;
     margin-bottom: 0;
   }
   .menu {
@@ -884,7 +885,7 @@ img {
 
 @media (min-width: 1000px) {
   .header-apps {
-    padding: 111px 0 112px 0;
+    padding: 111px 0 122px 0;
   }
   .apps__slogan {
     display: block;
@@ -899,9 +900,10 @@ img {
   }
   .apps__button {
     margin-bottom: 67px;
+    font-size: 21px;
   }
   .apps__list {
-    margin-bottom: 61px;
+    margin-bottom: 51px;
   }
 }
 
@@ -1092,7 +1094,7 @@ img {
   .feature__item {
     position: relative;
     width: 300px;
-    padding-top: 54px;
+    padding-top: 56px;
   }
   .feature__item::before {
     content: "";
@@ -1238,14 +1240,14 @@ img {
   .feature__research {
     position: relative;
     display: block;
-    padding: 159px 0 113px 0;
+    padding: 127px 0 113px 0;
   }
   .research-feature {
     background: #f2f2f2;
   }
   .research-feature__wrap {
     width: 570px;
-    padding-left: 370px;
+    padding-left: 365px;
     margin: 0 auto;
   }
   .research-feature__wrap::before {
@@ -1348,22 +1350,22 @@ img {
   }
   .slider-arrows__switch {
     position: absolute;
-    top: -153px;
+    top: -156px;
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 33px;
+    height: 33px;
     background-color: transparent;
     border: 3px solid rgba(40, 54, 69, 0.3);
     cursor: pointer;
   }
   .slider-arrows__switch--next {
-    right: 0;
+    right: 4px;
     border-left-color: transparent;
     border-top-color: transparent;
     transform: rotate(-45deg);
   }
   .slider-arrows__switch--back {
-    left: 0;
+    left: 4px;
     border-right-color: transparent;
     border-top-color: transparent;
     transform: rotate(45deg);
@@ -1792,6 +1794,13 @@ img {
   .tariffs-list__item-active {
     width: 25%;
   }
+  .tariffs-list__item--hit::before {
+    background-image: linear-gradient(135deg, transparent 22%, #d22856 22%, #d22856 50%, transparent 50%, transparent);
+  }
+  .tariffs-list__item--hit::after {
+    top: 12px;
+    left: 10px;
+  }
   .tariff__title {
     padding-top: 17px;
     padding-bottom: 3px;
@@ -1806,7 +1815,7 @@ img {
     margin-top: 97px;
   }
   .tariff__feature--wide {
-    padding: 14px 0 15px 24px;
+    padding: 14px 0 15px 20px;
     font-size: 18px;
     line-height: 30px;
     color: #283645;
@@ -1977,7 +1986,7 @@ img {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    padding-top: 65px;
+    padding-top: 62px;
     padding-bottom: 21px;
   }
   .contacts__text {
@@ -2000,14 +2009,14 @@ img {
   }
   .contacts__item:nth-child(2) {
     order: 3;
+    padding-bottom: 0;
   }
   .contacts__item:last-child {
     order: 2;
     padding-bottom: 0;
   }
-  .contacts__item:last-child .contact__info {
-    display: inline-block;
-    max-width: 215px;
+  .contacts__item:last-child .contact__title {
+    padding-bottom: 26px;
   }
   .contact__title {
     padding-bottom: 24px;
@@ -2096,8 +2105,12 @@ img {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
-    padding-top: 70px;
+    padding-top: 81px;
     padding-bottom: 72px;
+  }
+  .page-footer-logo {
+    margin-right: 234px;
+    padding-bottom: 8px;
   }
   .footer-logo__icon--tablet {
     display: none;

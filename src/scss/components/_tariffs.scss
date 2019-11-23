@@ -308,6 +308,18 @@
     width: 25%;
   }
 
+  .tariffs-list__item--hit {
+
+    &::before {
+      background-image: linear-gradient(135deg, transparent 22%, #d22856 22%, #d22856 50%, transparent 50%, transparent);
+    }
+
+    &::after {
+      top: 12px;
+      left: 10px;
+    }
+  }
+
   .tariff__title {
     padding-top: 17px;
     padding-bottom: 3px;
@@ -327,7 +339,7 @@
   }
 
   .tariff__feature--wide {
-    padding: 14px 0 15px 24px;
+    padding: 14px 0 15px 20px;
 
     font-size: 18px;
     line-height: 30px;
