@@ -243,14 +243,15 @@
 @media (min-width: $desktop-screen) {
   .photo-posts__intro {
     max-width: 575px;
-    padding: 93px 0 84px 0;
+    padding: 93px 0 86px 0;
   }
 
   .photo-posts__best {
     height: 506px;
 
     &::before {
-      top: 54px;
+      top: 55px;
+      right: 129px;
     }
   }
 
@@ -259,6 +260,11 @@
   }
 
   .photo_posts__item {
+    margin-top: 53px;
+
+    &:not(:first-child) {
+      min-height: 555px;
+    }
 
     &:nth-child(-n + 4) {
       margin-top: 0;
@@ -270,12 +276,21 @@
     }
   }
 
+  .photo_posts__comment {
+    padding: 24px 10px 24px 27px;
+
+    &--best {
+      padding-bottom: 14px;
+    }
+  }
+
   .photo-posts__img-wrap {
     width: 300px;
     height: 400px;
   }
 
   .photo_posts__text {
+    padding-bottom: 11px;
 
     &--best {
       max-width: 865px;
@@ -284,13 +299,17 @@
 
   .photo_posts__like-button {
 
+    &::before{
+      left: 229px;
+    }
+
     &--best {
-      padding-right: 21px;
+      padding-right: 23px;
     }
 
     &--best::before{
       top: 5px;
-      left: 105px;
+      left: 107px;
     }
   }
 

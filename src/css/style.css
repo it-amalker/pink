@@ -2441,18 +2441,25 @@ img {
 @media (min-width: 1000px) {
   .photo-posts__intro {
     max-width: 575px;
-    padding: 93px 0 84px 0;
+    padding: 93px 0 86px 0;
   }
   .photo-posts__best {
     height: 506px;
   }
   .photo-posts__best::before {
-    top: 54px;
+    top: 55px;
+    right: 129px;
   }
   .photo-posts__list {
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+  }
+  .photo_posts__item {
+    margin-top: 53px;
+  }
+  .photo_posts__item:not(:first-child) {
+    min-height: 555px;
   }
   .photo_posts__item:nth-child(-n + 4) {
     margin-top: 0;
@@ -2461,19 +2468,31 @@ img {
     width: 100%;
     margin-bottom: 50px;
   }
+  .photo_posts__comment {
+    padding: 24px 10px 24px 27px;
+  }
+  .photo_posts__comment--best {
+    padding-bottom: 14px;
+  }
   .photo-posts__img-wrap {
     width: 300px;
     height: 400px;
   }
+  .photo_posts__text {
+    padding-bottom: 11px;
+  }
   .photo_posts__text--best {
     max-width: 865px;
   }
+  .photo_posts__like-button::before {
+    left: 229px;
+  }
   .photo_posts__like-button--best {
-    padding-right: 21px;
+    padding-right: 23px;
   }
   .photo_posts__like-button--best::before {
     top: 5px;
-    left: 105px;
+    left: 107px;
   }
   .photo-posts__intro--afterwords {
     padding: 60px 0 65px 0;
@@ -2526,21 +2545,19 @@ img {
 @media (min-width: 1000px) {
   .photo-editor {
     height: 514px;
+    margin-bottom: 13px;
     padding: 0;
     background-color: #ffffff;
   }
   .photo-editor__wrapper {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
+    width: 920px;
+    padding: 56px 10px 57px 10px;
     flex-direction: row;
     justify-content: space-between;
-    width: 920px;
-    padding: 56px 0 57px 0;
     background-color: #f2f2f2;
   }
   .photo-editor__img-wrap {
-    margin: 0 auto;
+    margin-left: 69px;
   }
 }
 
@@ -2709,14 +2726,18 @@ img {
   .tools {
     width: 410px;
     margin-right: 50px;
+    padding: 0;
   }
   .tools__list {
-    margin-bottom: 146px;
+    margin-bottom: 144px;
   }
   .tools__item {
     margin-bottom: 13px;
     padding-bottom: 13px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+  .tools__item:nth-child(2) {
+    margin-bottom: 12px;
   }
   .tools__item:last-child {
     margin-bottom: 0;
@@ -2724,6 +2745,7 @@ img {
   .tools__button {
     width: 48px;
     height: 44px;
+    padding: 0;
   }
   .tools__button-icon--crop {
     width: 44px;

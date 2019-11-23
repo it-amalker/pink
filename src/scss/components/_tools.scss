@@ -195,10 +195,11 @@
   .tools {
     width: 410px;
     margin-right: 50px;
+    padding: 0;
   }
 
   .tools__list {
-    margin-bottom: 146px;
+    margin-bottom: 144px;
   }
 
   .tools__item {
@@ -206,6 +207,10 @@
     padding-bottom: 13px;
 
     border-bottom: 1px solid rgba($color-blue, 0.1);
+
+    &:nth-child(2) {
+      margin-bottom: 12px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -215,6 +220,7 @@
   .tools__button {
     width: 48px;
     height: 44px;
+    padding: 0;
   }
 
   .tools__button-icon {

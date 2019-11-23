@@ -48,6 +48,7 @@
 @media (min-width: $desktop-screen) {
   .photo-editor {
     height: 514px;
+    margin-bottom: 13px;
     padding: 0;
 
 
@@ -55,17 +56,17 @@
   }
 
   .photo-editor__wrapper {
-  @include container-desktop;
+    width: 920px;
+    padding: 56px 10px 57px 10px;
 
   flex-direction: row;
   justify-content: space-between;
-  width: 920px;
-  padding: 56px 0 57px 0;
+
 
   background-color: #f2f2f2;
   }
 
   .photo-editor__img-wrap {
-    margin: 0 auto;
+    margin-left: 69px;
   }
 }
