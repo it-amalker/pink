@@ -1,12 +1,18 @@
 .slider-toggles {
   display: block;
-  width: 65px;
-  margin-left: -32px;
+  width: 70px;
+  margin-left: -35px;
+  text-align: center;
 }
 
 .slider-toggles__item {
   display: inline-block;
   width: 15px;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .slider-toggles__switch {

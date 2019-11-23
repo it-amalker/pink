@@ -1,11 +1,11 @@
 .features {
-  padding-top: 43px;
+  padding-top: 41px;
 }
 
 .features__slogan {
   max-width: 220px;
   margin: 0 auto;
-  padding-bottom: 36px;
+  padding-bottom: 33px;
 
   font-size: 24px;
   line-height: 1.2;
@@ -15,7 +15,7 @@
 
   &--second-line {
     display: block;
-    padding-top: 26px;
+    padding-top: 30px;
   }
 }
 
@@ -23,7 +23,7 @@
   position: relative;
 
   display: block;
-  padding: 82px 20px 315px 20px;
+  padding: 82px 20px 317px 20px;
 
   background-color: #f2f2f2;
 
@@ -46,7 +46,7 @@
     content: "";
 
     position: absolute;
-    bottom: -43px;
+    bottom: -42px;
     left: 50%;
 
     width: 156px;
@@ -69,6 +69,7 @@
   margin: 0;
   padding-bottom: 12px;
 
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
@@ -77,7 +78,7 @@
   display: block;
   max-width: 262px;
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
 
   font-size: 14px;
   color: $color-blue;

@@ -17,12 +17,12 @@
 
   &--base {
     top: 0;
-    left: -95%;
+    left: -93%;
   }
 
   &--standard {
     top: 0;
-    left: -95%;
+    left: -94%;
   }
 
   &--unlim {
@@ -36,7 +36,7 @@
 }
 
 .tariffs-list__item-active {
-  width: 91%;
+  width: 88%;
 
   margin: 0 auto;
 }
@@ -48,20 +48,20 @@
 
     position: absolute;
     top: 0;
-    left: -2px;
+    left: 0;
 
     width: 73px;
     height: 73px;
 
-    background-image: linear-gradient(135deg, transparent 25%, #d22856 25%, #d22856 50%, transparent 50%, transparent);
+    background-image: linear-gradient(135deg, transparent 22%, #d22856 22%, #d22856 50%, transparent 50%, transparent);
   }
 
   &::after {
     content: "хит";
 
     position: absolute;
-    top: 13px;
-    left: 9px;
+    top: 12px;
+    left: 10px;
 
     font: inherit;
     font-size: 14px;
@@ -75,12 +75,14 @@
 
 .tariff__title {
   margin: 0;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-bottom: 2px;
 
+  font-size: 18px;
   line-height: 30px;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
 
   background-color: $color-blue;
 }
@@ -101,6 +103,8 @@
 .tariff__table {
   border-collapse: collapse;
   width: 100%;
+
+  background-color: #ffffff;
 }
 
 .tariff__feature {
@@ -110,6 +114,7 @@
   font-size: 14px;
   line-height: 30px;
   color: $color-blue;
+  text-transform: uppercase;
   text-align: left;
 
   border-bottom: 2px solid #e5e5e5;

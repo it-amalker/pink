@@ -390,7 +390,7 @@ img {
 .page-header::before {
   content: "";
   position: absolute;
-  bottom: 274px;
+  bottom: 273px;
   left: 50%;
   z-index: 1;
   width: 256px;
@@ -746,7 +746,7 @@ img {
 }
 
 .header-apps {
-  margin-top: 396px;
+  margin-top: 394px;
   padding: 28px 20px 31px 20px;
 }
 
@@ -763,7 +763,7 @@ img {
   display: block;
   max-width: 280px;
   margin: 0 auto;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   padding: 16px 0;
   box-sizing: border-box;
   line-height: 18px;
@@ -897,13 +897,13 @@ img {
 }
 
 .features {
-  padding-top: 43px;
+  padding-top: 41px;
 }
 
 .features__slogan {
   max-width: 220px;
   margin: 0 auto;
-  padding-bottom: 36px;
+  padding-bottom: 33px;
   font-size: 24px;
   line-height: 1.2;
   color: #283645;
@@ -913,13 +913,13 @@ img {
 
 .features__slogan--second-line {
   display: block;
-  padding-top: 26px;
+  padding-top: 30px;
 }
 
 .features__wrap {
   position: relative;
   display: block;
-  padding: 82px 20px 315px 20px;
+  padding: 82px 20px 317px 20px;
   background-color: #f2f2f2;
   overflow: hidden;
 }
@@ -937,7 +937,7 @@ img {
 .features__wrap::after {
   content: "";
   position: absolute;
-  bottom: -43px;
+  bottom: -42px;
   left: 50%;
   width: 156px;
   height: 320px;
@@ -958,6 +958,7 @@ img {
   display: block;
   margin: 0;
   padding-bottom: 12px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
@@ -966,7 +967,7 @@ img {
   display: block;
   max-width: 262px;
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   font-size: 14px;
   color: #283645;
   text-align: center;
@@ -1271,13 +1272,19 @@ img {
 
 .slider-toggles {
   display: block;
-  width: 65px;
-  margin-left: -32px;
+  width: 70px;
+  margin-left: -35px;
+  text-align: center;
 }
 
 .slider-toggles__item {
   display: inline-block;
   width: 15px;
+  margin-right: 5px;
+}
+
+.slider-toggles__item:last-child {
+  margin-right: 0;
 }
 
 .slider-toggles__switch {
@@ -1381,7 +1388,7 @@ img {
 .reviews__author-name {
   display: block;
   margin: 0 auto;
-  padding-bottom: 17px;
+  padding-bottom: 12px;
   line-height: 30px;
   font-weight: bold;
   font-style: normal;
@@ -1404,7 +1411,7 @@ img {
 
 .reviews__toggles {
   position: absolute;
-  bottom: 42px;
+  bottom: 37px;
   left: 50%;
 }
 
@@ -1479,7 +1486,7 @@ img {
 
 .prices__wrapper {
   position: relative;
-  padding: 91px 20px 99px 20px;
+  padding: 91px 0 99px 0;
   background-color: #f2f2f2;
 }
 
@@ -1499,7 +1506,7 @@ img {
 
 .prices__toggles {
   position: absolute;
-  bottom: 47px;
+  bottom: 41px;
   left: 50%;
 }
 
@@ -1534,12 +1541,12 @@ img {
 
 .tariffs-list__item--base {
   top: 0;
-  left: -95%;
+  left: -93%;
 }
 
 .tariffs-list__item--standard {
   top: 0;
-  left: -95%;
+  left: -94%;
 }
 
 .tariffs-list__item--unlim {
@@ -1552,7 +1559,7 @@ img {
 }
 
 .tariffs-list__item-active {
-  width: 91%;
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -1560,17 +1567,17 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: -2px;
+  left: 0;
   width: 73px;
   height: 73px;
-  background-image: linear-gradient(135deg, transparent 25%, #d22856 25%, #d22856 50%, transparent 50%, transparent);
+  background-image: linear-gradient(135deg, transparent 22%, #d22856 22%, #d22856 50%, transparent 50%, transparent);
 }
 
 .tariffs-list__item--hit::after {
   content: "хит";
   position: absolute;
-  top: 13px;
-  left: 9px;
+  top: 12px;
+  left: 10px;
   font: inherit;
   font-size: 14px;
   line-height: 30px;
@@ -1581,11 +1588,13 @@ img {
 
 .tariff__title {
   margin: 0;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-bottom: 2px;
+  font-size: 18px;
   line-height: 30px;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
   background-color: #283645;
 }
 
@@ -1603,6 +1612,7 @@ img {
 .tariff__table {
   border-collapse: collapse;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .tariff__feature {
@@ -1611,6 +1621,7 @@ img {
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-transform: uppercase;
   text-align: left;
   border-bottom: 2px solid #e5e5e5;
 }
@@ -1799,12 +1810,12 @@ img {
 }
 
 .contacts__wrapper {
-  padding: 43px 20px 38px 20px;
+  padding: 44px 20px 38px 20px;
 }
 
 .contacts__text {
   display: block;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
   max-width: 225px;
   margin: 0 auto;
   font-size: 24px;
@@ -1819,17 +1830,26 @@ img {
 }
 
 .contacts__item {
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   text-align: center;
+}
+
+.contacts__item:nth-child(2) {
+  padding-bottom: 26px;
 }
 
 .contacts__item:last-child {
   padding-bottom: 0;
 }
 
+.contacts__item:last-child .contact__title {
+  padding-bottom: 6px;
+}
+
 .contact__title {
   margin: 0;
   padding-bottom: 4px;
+  font-size: 18px;
   line-height: 1.2;
   color: #283645;
 }

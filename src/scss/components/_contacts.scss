@@ -1,10 +1,10 @@
 .contacts__wrapper {
-  padding: 43px 20px 38px 20px;
+  padding: 44px 20px 38px 20px;
 }
 
 .contacts__text {
   display: block;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
   max-width: 225px;
   margin: 0 auto;
 
@@ -20,13 +20,22 @@
 }
 
 .contacts__item {
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 
   text-align: center;
+
+  &:nth-child(2) {
+    padding-bottom: 26px;
+  }
 
   &:last-child {
     padding-bottom: 0;
   }
+
+  &:last-child .contact__title {
+    padding-bottom: 6px;
+  }
+
 }
 
 .contact__title {
@@ -34,6 +43,7 @@
 
   padding-bottom: 4px;
 
+  font-size: 18px;
   line-height: 1.2;
   color: $color-blue;
 }
