@@ -31,6 +31,20 @@
 
 @media (min-width: $tablet-screen) {
 
+  .prices__wrapper {
+
+    padding: 88px 0 68px 0;
+
+    &::before {
+      height: 51px;
+    }
+  }
+
+  .prices__list {
+    position: relative;
+    margin: 0 auto;
+  }
+
   .prices__toggles {
     display: none;
   }

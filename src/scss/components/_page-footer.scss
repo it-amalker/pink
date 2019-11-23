@@ -49,17 +49,22 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 36px;
+    padding-top: 34px;
     padding-bottom: 36px;
   }
 
   .page-footer-logo {
     margin-bottom: 0;
+    margin-right: 74px;
   }
 
   .footer-social__list {
     margin-bottom: 0;
+  }
+
+  .footer__copyright {
+    margin-left: auto;
+    margin-top: 7px;
   }
 }
 

@@ -55,7 +55,7 @@
 
 .apps-download__item {
   display: inline-block;
-  padding-right: 31px;
+  padding-right: 33px;
 
   &:last-child {
     padding-right: 0;
@@ -104,7 +104,7 @@
     z-index: 1;
 
     margin: 0;
-    padding: 96px 0 105px 0;
+    padding: 92px 0 109px 0;
   }
 
   .apps {
@@ -127,15 +127,21 @@
   }
 
   .apps__button {
-    margin-bottom: 46px;
+    max-width: 300px;
+    margin-bottom: 44px;
   }
 
   .apps__list {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 
   .apps-download {
     width: 225px;
+  }
+
+  .apps__info {
+    max-width: 300px;
+    font-size: 18px;
   }
 }
 

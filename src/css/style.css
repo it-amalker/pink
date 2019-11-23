@@ -577,7 +577,11 @@ img {
 @media (min-width: 660px) {
   .logo {
     min-height: 110px;
+    padding: 0;
     background-color: transparent;
+  }
+  .logo__icon {
+    padding-bottom: 16px;
   }
   .logo__icon--mobile {
     display: none;
@@ -799,7 +803,7 @@ img {
 
 .apps-download__item {
   display: inline-block;
-  padding-right: 31px;
+  padding-right: 33px;
 }
 
 .apps-download__item:last-child {
@@ -845,7 +849,7 @@ img {
     position: relative;
     z-index: 1;
     margin: 0;
-    padding: 96px 0 105px 0;
+    padding: 92px 0 109px 0;
   }
   .apps {
     width: 300px;
@@ -863,13 +867,18 @@ img {
     text-align: center;
   }
   .apps__button {
-    margin-bottom: 46px;
+    max-width: 300px;
+    margin-bottom: 44px;
   }
   .apps__list {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
   .apps-download {
     width: 225px;
+  }
+  .apps__info {
+    max-width: 300px;
+    font-size: 18px;
   }
 }
 
@@ -963,18 +972,21 @@ img {
   text-align: center;
 }
 
+.feature__item {
+  margin-bottom: 31px;
+}
+
+.feature__item:last-child {
+  margin-bottom: 0;
+}
+
 .feature__description {
   display: block;
   max-width: 262px;
   margin: 0 auto;
-  padding-bottom: 31px;
   font-size: 14px;
   color: #283645;
   text-align: center;
-}
-
-.feature__item:last-child .feature__description {
-  padding-bottom: 0;
 }
 
 .feature__research {
@@ -983,11 +995,11 @@ img {
 
 @media (min-width: 660px) {
   .features {
-    padding-top: 53px;
+    padding-top: 49px;
   }
   .features__slogan {
     max-width: 590px;
-    padding-bottom: 43px;
+    padding-bottom: 49px;
     font-size: 40px;
   }
   .features__slogan--second-line {
@@ -996,7 +1008,7 @@ img {
   }
   .features__wrap {
     padding-top: 73px;
-    padding-bottom: 38px;
+    padding-bottom: 44px;
   }
   .features__wrap::before {
     height: 50px;
@@ -1032,14 +1044,16 @@ img {
 }
 
 @media (min-width: 660px) {
+  .feature__item {
+    margin-bottom: 35px;
+  }
   .feature__title {
-    padding-bottom: 13px;
+    padding-bottom: 11px;
     text-align: left;
   }
   .feature__description {
     max-width: 310px;
     margin: 0;
-    padding-bottom: 35px;
     text-align: left;
   }
 }
@@ -1157,7 +1171,7 @@ img {
 @media (min-width: 660px) {
   .feature__research {
     display: block;
-    padding: 96px 20px 26px 20px;
+    padding: 95px 20px 26px 20px;
   }
   .research-feature__wrap {
     position: relative;
@@ -1179,8 +1193,8 @@ img {
   .research-feature__wrap::after {
     content: "24";
     position: absolute;
-    top: 20px;
-    left: 18px;
+    top: 19px;
+    left: 19px;
     width: 174px;
     height: 174px;
     font-size: 96px;
@@ -1445,7 +1459,7 @@ img {
     text-align: center;
   }
   .reviews__toggles {
-    bottom: 21px;
+    bottom: 17px;
   }
 }
 
@@ -1511,6 +1525,16 @@ img {
 }
 
 @media (min-width: 660px) {
+  .prices__wrapper {
+    padding: 88px 0 68px 0;
+  }
+  .prices__wrapper::before {
+    height: 51px;
+  }
+  .prices__list {
+    position: relative;
+    margin: 0 auto;
+  }
   .prices__toggles {
     display: none;
   }
@@ -1665,12 +1689,6 @@ img {
     margin: 0 auto;
     padding: 0 20px;
   }
-  .prices__wrapper {
-    padding: 88px 20px 68px 20px;
-  }
-  .prices__wrapper::before {
-    height: 51px;
-  }
   .tariffs-list__item--wide {
     display: block;
   }
@@ -1697,6 +1715,13 @@ img {
   .tariffs-list__item-active {
     width: 25%;
   }
+  .tariffs-list__item--hit::before {
+    background-image: linear-gradient(135deg, transparent 12%, #d22856 12%, #d22856 39%, transparent 39%, transparent);
+  }
+  .tariffs-list__item--hit::after {
+    top: 4px;
+    left: 6px;
+  }
   .tariff__title {
     padding-top: 12px;
     padding-bottom: 0;
@@ -1711,7 +1736,7 @@ img {
     margin-top: 79px;
   }
   .tariff__feature--wide {
-    padding: 7px 0 8px 15px;
+    padding: 6px 0 8px 15px;
     font-size: 14px;
     line-height: 30px;
     color: #283645;
@@ -1723,7 +1748,7 @@ img {
   }
   .tariff__availability {
     width: 100%;
-    height: 45px;
+    height: 44px;
   }
   .tariff__availability--yes::before {
     top: 50%;
@@ -1916,8 +1941,8 @@ img {
     padding-bottom: 28px;
   }
   .contacts__text {
-    padding-bottom: 44px;
     max-width: 370px;
+    padding-bottom: 45px;
     font-size: 40px;
     line-height: 1.2;
   }
@@ -2050,15 +2075,19 @@ img {
     padding: 0 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 36px;
+    padding-top: 34px;
     padding-bottom: 36px;
   }
   .page-footer-logo {
     margin-bottom: 0;
+    margin-right: 74px;
   }
   .footer-social__list {
     margin-bottom: 0;
+  }
+  .footer__copyright {
+    margin-left: auto;
+    margin-top: 7px;
   }
 }
 
@@ -2090,6 +2119,7 @@ img {
 .social {
   display: flex;
   justify-content: space-between;
+  padding-top: 5px;
 }
 
 .social__item {

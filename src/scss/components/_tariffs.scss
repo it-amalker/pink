@@ -168,15 +168,6 @@
     @include container-tablet;
   }
 
-  .prices__wrapper {
-
-    padding: 88px 20px 68px 20px;
-
-    &::before {
-      height: 51px;
-    }
-  }
-
   .tariffs-list__item--wide {
     display: block;
   }
@@ -212,6 +203,18 @@
     width: 25%;
   }
 
+  .tariffs-list__item--hit {
+
+    &::before {
+      background-image: linear-gradient(135deg, transparent 12%, #d22856 12%, #d22856 39%, transparent 39%, transparent);
+    }
+
+    &::after {
+      top: 4px;
+      left: 6px;
+    }
+  }
+
   .tariff__title {
     padding-top: 12px;
     padding-bottom: 0;
@@ -231,7 +234,7 @@
   }
 
   .tariff__feature--wide {
-    padding: 7px 0 8px 15px;
+    padding: 6px 0 8px 15px;
 
     font-size: 14px;
     line-height: 30px;
@@ -247,7 +250,7 @@
 
   .tariff__availability {
     width: 100%;
-    height: 45px;
+    height: 44px;
 
     &--yes::before {
       top: 50%;
