@@ -1184,6 +1184,7 @@ img {
   }
   .features__wrap::after {
     display: none;
+    background-image: none;
   }
   .features__list {
     position: relative;
