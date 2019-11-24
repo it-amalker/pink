@@ -376,19 +376,59 @@ img {
   overflow: hidden;
 }
 
+.webp .page-header {
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@1x.webp");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@1x.webp");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .webp .page-header {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@2x.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@2x.webp");
+  }
+}
+
+.no-webp .page-header {
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@1x.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@1x.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .no-webp .page-header {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.webp .page-header::before {
+  background-image: url("../img/iphone-hand-mobile@1x.webp");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .webp .page-header::before {
+    background-image: url("../img/iphone-hand-mobile@2x.webp");
+  }
+}
+
+.no-webp .page-header::before {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .no-webp .page-header::before {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
+}
+
 .page-header {
   position: relative;
   display: block;
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@1x.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header {
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@2x.jpg");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 66px, transparent 66px), url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px auto;
   }
 }
@@ -402,14 +442,12 @@ img {
   width: 256px;
   height: 286px;
   margin-left: -128px;
-  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .page-header::before {
-    background-image: url("../img/iphone-hand-mobile@2x.png");
     background-size: 258px auto;
   }
 }
@@ -440,9 +478,59 @@ img {
 }
 
 @media (min-width: 660px) {
-  .page-header {
+  .webp .page-header {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@1x.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@1x.webp");
+  }
+}
+
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .webp .page-header {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@2x.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@2x.webp");
+  }
+}
+
+@media (min-width: 660px) {
+  .no-webp .page-header {
     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@1x.jpg");
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .no-webp .page-header {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@2x.jpg");
+  }
+}
+
+@media (min-width: 660px) {
+  .webp .page-header::before {
+    background-image: url("../img/iphone-hand-tablet@1x.webp");
+  }
+}
+
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .webp .page-header::before {
+    background-image: url("../img/iphone-hand-tablet@2x.webp");
+  }
+}
+
+@media (min-width: 660px) {
+  .no-webp .page-header::before {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+  }
+}
+
+@media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
+  .no-webp .page-header::before {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+  }
+}
+
+@media (min-width: 660px) {
+  .page-header {
     background-size: cover;
     background-position: center;
   }
@@ -450,8 +538,6 @@ img {
 
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .page-header {
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@2x.jpg");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-tablet@2x.jpg");
     background-size: 1200px auto;
   }
 }
@@ -462,14 +548,12 @@ img {
     width: 700px;
     height: 545px;
     margin-left: -350px;
-    background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: 0 0;
   }
 }
 
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
   .page-header::before {
-    background-image: url("../img/iphone-hand-tablet@2x.png");
     background-size: 700px auto;
   }
 }
@@ -497,16 +581,59 @@ img {
 }
 
 @media (min-width: 1000px) {
-  .page-header {
+  .webp .page-header {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@1x.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@1x.webp");
+  }
+}
+
+@media (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1000px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1000px) and (min-resolution: 144dpi), (min-width: 1000px) and (min-resolution: 1.5dppx) {
+  .webp .page-header {
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@2x.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@2x.webp");
+  }
+}
+
+@media (min-width: 1000px) {
+  .no-webp .page-header {
     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@1x.jpg");
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@1x.jpg");
   }
 }
 
 @media (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1000px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1000px) and (min-resolution: 144dpi), (min-width: 1000px) and (min-resolution: 1.5dppx) {
-  .page-header {
+  .no-webp .page-header {
     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@2x.jpg");
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 110px, transparent 110px), url("../img/bg-back-desktop@2x.jpg");
+  }
+}
+
+@media (min-width: 1000px) {
+  .webp .page-header::before {
+    background-image: url("../img/iphone-hand-desktop@1x.webp");
+  }
+}
+
+@media (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1000px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1000px) and (min-resolution: 144dpi), (min-width: 1000px) and (min-resolution: 1.5dppx) {
+  .webp .page-header::before {
+    background-image: url("../img/iphone-hand-desktop@2x.webp");
+  }
+}
+
+@media (min-width: 1000px) {
+  .no-webp .page-header::before {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+  }
+}
+
+@media (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1000px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1000px) and (min-resolution: 144dpi), (min-width: 1000px) and (min-resolution: 1.5dppx) {
+  .no-webp .page-header::before {
+    background-image: url("../img/iphone-hand-desktop@2x.png");
+  }
+}
+
+@media (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1000px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1000px) and (min-resolution: 144dpi), (min-width: 1000px) and (min-resolution: 1.5dppx) {
+  .page-header {
     background-size: 2560px auto;
   }
 }
@@ -517,14 +644,12 @@ img {
     width: 1050px;
     height: 645px;
     margin-left: -455px;
-    background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 0 0;
   }
 }
 
 @media (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1000px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1000px) and (min-resolution: 144dpi), (min-width: 1000px) and (min-resolution: 1.5dppx) {
   .page-header::before {
-    background-image: url("../img/iphone-hand-desktop@2x.png");
     background-size: 1050px auto;
   }
 }
