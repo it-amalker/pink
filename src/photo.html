@@ -7,7 +7,7 @@
   <title>Фотографии</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -63,8 +63,13 @@
       <div class="photo-posts__best">
         <a href="#">
           <picture>
-            <source media="(min-width: 1000px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <source srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x"
+              media="(min-width: 1000px)" type="image/webp">
+            <source srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 1000px)">
+            <source srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x" type="image/webp"
+              media="(min-width: 660px)">
+            <source srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
+            <source srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x" type="image/webp">
             <img class="photo-posts__best-img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
               alt="Панорама дня">
           </picture>
@@ -86,9 +91,14 @@
           <div class="photo-posts__img-wrap">
             <a href="#">
               <picture>
-                <source media="(min-width: 1000px)"
-                  srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <source srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x"
+                  media="(min-width: 1000px)" type="image/webp">
+                <source srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x"
+                  media="(min-width: 1000px)">
+                <source srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x" media="(min-width: 600px)"
+                  type="image/webp">
+                <source srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                <source srcset="img/photo-1-mobile@1x.webp 1x, img/photo-1-mobile@2x.webp 2x" type="image/webp">
                 <img class="photo-posts__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
                   alt="Телескоп">
               </picture>
@@ -105,9 +115,14 @@
           <div class="photo-posts__img-wrap">
             <a href="#">
               <picture>
-                <source media="(min-width: 1000px)"
-                  srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <source srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x"
+                  media="(min-width: 1000px)" type="image/webp">
+                <source srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x"
+                  media="(min-width: 1000px)">
+                <source srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x" media="(min-width: 600px)"
+                  type="image/webp">
+                <source srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                <source srcset="img/photo-2-mobile@1x.webp 1x, img/photo-2-mobile@2x.webp 2x" type="image/webp">
                 <img class="photo-posts__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
                   alt="Барабанная установка">
               </picture>
@@ -124,9 +139,14 @@
           <div class="photo-posts__img-wrap">
             <a href="#">
               <picture>
-                <source media="(min-width: 1000px)"
-                  srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <source srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x"
+                  media="(min-width: 1000px)" type="image/webp">
+                <source srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x"
+                  media="(min-width: 1000px)">
+                <source srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x" media="(min-width: 600px)"
+                  type="image/webp">
+                <source srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                <source srcset="img/photo-3-mobile@1x.webp 1x, img/photo-3-mobile@2x.webp 2x" type="image/webp">
                 <img class="photo-posts__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
                   alt="Окна">
               </picture>
@@ -143,9 +163,14 @@
           <div class="photo-posts__img-wrap">
             <a href="#">
               <picture>
+                <source srcset="img/photo-4-desktop@1x.webp 1x, img/photo-4-desktop@2x.webp 2x"
+                  media="(min-width: 1000px)" type="image/webp">
                 <source media="(min-width: 1000px)"
                   srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source srcset="img/photo-4-tablet@1x.webp 1x, img/photo-4-tablet@2x.webp 2x" media="(min-width: 600px)"
+                  type="image/webp">
                 <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <source srcset="img/photo-4-mobile@1x.webp 1x, img/photo-4-mobile@2x.webp 2x" type="image/webp">
                 <img class="photo-posts__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
                   alt="Кубанская бахча">
               </picture>
@@ -162,9 +187,14 @@
           <div class="photo-posts__img-wrap">
             <a href="#">
               <picture>
+                <source srcset="img/photo-5-desktop@1x.webp 1x, img/photo-5-desktop@2x.webp 2x"
+                  media="(min-width: 1000px)" type="image/webp">
                 <source media="(min-width: 1000px)"
                   srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                <source srcset="img/photo-5-tablet@1x.webp 1x, img/photo-5-tablet@2x.webp 2x" media="(min-width: 600px)"
+                  type="image/webp">
                 <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                <source srcset="img/photo-5-mobile@1x.webp 1x, img/photo-5-mobile@2x.webp 2x" type="image/webp">
                 <img class="photo-posts__img" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"
                   alt="В горах">
               </picture>
@@ -181,9 +211,14 @@
           <div class="photo-posts__img-wrap">
             <a href="#">
               <picture>
+                <source srcset="img/photo-6-desktop@1x.webp 1x, img/photo-6-desktop@2x.webp 2x"
+                  media="(min-width: 1000px)" type="image/webp">
                 <source media="(min-width: 1000px)"
                   srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                <source srcset="img/photo-6-tablet@1x.webp 1x, img/photo-6-tablet@2x.webp 2x" media="(min-width: 600px)"
+                  type="image/webp">
                 <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                <source srcset="img/photo-6-mobile@1x.webp 1x, img/photo-6-mobile@2x.webp 2x" type="image/webp">
                 <img class="photo-posts__img" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x"
                   alt="Вид из самолета">
               </picture>
@@ -204,8 +239,11 @@
       <div class="photo-editor__wrapper">
         <div class="photo-editor__img-wrap">
           <picture>
-            <source media="(min-width: 660px)"
-              srcset="img/photo-editor-tablet@1x.jpg 1x, photo-editor-tablet@2x.jpg 2x">
+            <source srcset="img/photo-editor-tablet@1x.webp 1x, img/photo-editor-tablet@2x.webp 2x"
+              media="(min-width: 600px)" type="image/webp">
+            <source srcset="img/photo-editor-tablet@1x.jpg 1x, photo-editor-tablet@2x.jpg 2x"
+              media="(min-width: 660px)">
+            <source srcset="img/photo-editor-mobile@1x.webp 1x, img/photo-editor-mobile@2x.webp 2x" type="image/webp">
             <img class="photo-editor__img" src="img/photo-editor-mobile@1x.jpg"
               srcset="img/photo-editor-mobile@2x.jpg 2x" alt="Зимняя дорога">
           </picture>
