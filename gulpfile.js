@@ -28,9 +28,13 @@ gulp.task('css-libs', function () {
 gulp.task('scss', function () {
   return gulp.src('src/scss/**/*.scss')
     .pipe(sass({ outputStyle: 'expanded' }))
-    /*
+    .pipe(autoprefixer({
+      overrideBrowserslist: ['last 30 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('src/css'))
     .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(rename({ suffix: '.min' })) */
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.reload({ stream: true }))
 });
@@ -64,32 +68,7 @@ gulp.task('browser-sync', function () {
   });
 });
 
-gulp.task('clean', async function () {
-  del.sync('build')
-});
-
-gulp.task('pack', async function () {
-  let moveHTML = gulp.src('src/*.html')
-    .pipe(gulp.dest('build'));
-
-  let moveCSS = gulp.src('src/css/*.css')
-    .pipe(autoprefixer({
-      overrideBrowserslist: ['last 10 versions'],
-      cascade: false
-    }))
-    .pipe(sass({ outputStyle: 'compressed' }))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('build/css'));
-
-  let moveJS = gulp.src('src/js/*.js')
-    .pipe(gulp.dest('build/js'));
-
-  let moveFonts = gulp.src('src/fonts/*.*')
-    .pipe(gulp.dest('build/fonts'));
-
-  let moveImg = gulp.src('src/img/**/*.*')
-    .pipe(gulp.dest('build/img'));
-});
+// SVG sprite
 
 gulp.task('svgSpriteBuild', function () {
   return gulp.src('src/img/*.svg')
@@ -121,6 +100,31 @@ gulp.task('svgSpriteBuild', function () {
     .pipe(gulp.dest('src/img/sprites/'))
     .pipe(browserSync.reload({ stream: true }))
 })
+
+// Final Build tasks
+
+gulp.task('clean', async function () {
+  del.sync('build')
+});
+
+gulp.task('pack', async function () {
+  let moveHTML = gulp.src('src/*.html')
+    .pipe(gulp.dest('build'));
+
+  let moveCSS = gulp.src('src/css/*.css')
+    .pipe(gulp.dest('build/css'));
+
+  let moveJS = gulp.src('src/js/*.js')
+    .pipe(gulp.dest('build/js'));
+
+  let moveFonts = gulp.src('src/fonts/*.*')
+    .pipe(gulp.dest('build/fonts'));
+
+  let moveImg = gulp.src('src/img/**/*.*')
+    .pipe(gulp.dest('build/img'));
+});
+
+// Watch tasks
 
 gulp.task('watch', function () {
   gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'))
