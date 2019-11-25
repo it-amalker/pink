@@ -2574,7 +2574,6 @@ img {
 }
 
 .photo-posts__img {
-  position: relative;
   width: 100%;
   height: auto;
 }
