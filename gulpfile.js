@@ -48,6 +48,7 @@ gulp.task('js-libs', function () {
   return gulp.src([
     'node_modules/svg4everybody/dist/svg4everybody.js',
     'src/js/modernizr-custom.js',
+    'src/js/picturefill.js',
     'src/js/run.libs.min.js'
   ])
     .pipe(concat('libs.min.js'))
