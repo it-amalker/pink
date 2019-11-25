@@ -1,7 +1,6 @@
 let gulp = require('gulp'),
   sass = require('gulp-sass'),
   browserSync = require('browser-sync'),
-  uglify = require('gulp-uglify'),
   concat = require('gulp-concat'),
   rename = require('gulp-rename'),
   del = require('del'),
@@ -9,7 +8,8 @@ let gulp = require('gulp'),
   svgSprite = require('gulp-svg-sprite'),
   svgmin = require('gulp-svgmin'),
   cheerio = require('gulp-cheerio'),
-  replace = require('gulp-replace');
+  replace = require('gulp-replace'),
+  terser = require('gulp-terser');
 
 gulp.task('html', function () {
   return gulp.src('src/*.html')
@@ -40,21 +40,34 @@ gulp.task('scss', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src('src/js/*.js')
+  return gulp.src('src/js/main.js')
+    .pipe(terser({
+      output: {
+        comments: false
+      }
+    }))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('src/js'))
     .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('js-libs', function () {
   return gulp.src([
     'node_modules/svg4everybody/dist/svg4everybody.js',
-    'src/js/modernizr-custom.js',
-    'src/js/picturefill.js',
-    'src/js/run.libs.min.js'
+    'src/js/libs/modernizr-custom.js',
+    'src/js/libs/picturefill.js',
+    'src/js/libs/run.svg4everybody.js'
   ])
     .pipe(concat('libs.min.js'))
-    .pipe(uglify())
+    .pipe(terser({
+      output: {
+        comments: false
+      }
+    }))
     .pipe(gulp.dest('src/js'))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 gulp.task('img', function () {
@@ -113,16 +126,16 @@ gulp.task('pack', async function () {
   let moveHTML = gulp.src('src/*.html')
     .pipe(gulp.dest('build'));
 
-  let moveCSS = gulp.src('src/css/*.css')
+  let moveCSS = gulp.src('src/css/*.min.css')
     .pipe(gulp.dest('build/css'));
 
-  let moveJS = gulp.src('src/js/*.js')
+  let moveJS = gulp.src('src/js/*.min.js')
     .pipe(gulp.dest('build/js'));
 
   let moveFonts = gulp.src('src/fonts/*.*')
     .pipe(gulp.dest('build/fonts'));
 
-  let moveImg = gulp.src('src/img/**/*.*')
+  let moveImg = gulp.src(['src/img/*.webp', 'src/img/*.jpg', 'src/img/*.png', 'src/img/sprites/*.svg'], { base: './src/img' })
     .pipe(gulp.dest('build/img'));
 });
 
