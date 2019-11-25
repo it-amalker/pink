@@ -515,7 +515,7 @@
     left: 0;
 
     width: 368px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -545,6 +545,7 @@
   .contact-info__title {
     display: block;
     width: 260px;
+    margin: 0 auto;
   }
 
   .contact-info__list {
@@ -647,7 +648,7 @@
     left: 0;
 
     width: 436px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .achievements__list {
@@ -688,6 +689,7 @@
     left: 0;
 
     width: 260px;
+    margin: 0 auto;
   }
 
   .emotion__message {
@@ -783,13 +785,8 @@
   }
 
   .app-platform__title {
-    position: relative;
-    top: 0;
-    left: 0;
-
     width: 368px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
   }
 
   .app-platform__list {
@@ -814,7 +811,8 @@
 
   .contact-info__list {
     display: flex;
-    justify-content: space-evenly;
+
+    justify-content: space-around;
     width: 100%;
     padding: 0;
     margin: 0;

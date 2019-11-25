@@ -123,12 +123,13 @@
     top: 5px;
     left: 0;
 
-    width: 13px;
+    width: 14px;
     height: 12px;
 
     background-image: url("../img/sprites/sprite.svg#heart-icon");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
 

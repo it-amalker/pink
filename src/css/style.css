@@ -1989,16 +1989,12 @@ img {
     height: 44px;
   }
   .tariff__availability--yes::before {
-    top: 50%;
-    right: 50%;
-    margin-top: -10px;
-    margin-right: -15px;
+    top: 13px;
+    right: 60px;
   }
   .tariff__availability--no::before {
-    top: 50%;
-    right: 50%;
-    margin-top: -13px;
-    margin-right: -13px;
+    top: 9px;
+    right: 62px;
   }
 }
 
@@ -2069,16 +2065,12 @@ img {
     height: 59px;
   }
   .tariff__availability--yes::before {
-    top: 50%;
-    right: 50%;
-    margin-top: -10px;
-    margin-right: -15px;
+    top: 22px;
+    right: 101px;
   }
   .tariff__availability--no::before {
-    top: 50%;
-    right: 50%;
-    margin-top: -13px;
-    margin-right: -13px;
+    top: 16px;
+    right: 103px;
   }
 }
 
@@ -2652,11 +2644,12 @@ img {
   position: absolute;
   top: 5px;
   left: 0;
-  width: 13px;
+  width: 14px;
   height: 12px;
   background-image: url("../img/sprites/sprite.svg#heart-icon");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .photo-posts__intro--afterwords {
@@ -3669,7 +3662,7 @@ img {
     top: 0;
     left: 0;
     width: 368px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
   }
   .app-platform__list {
@@ -3696,6 +3689,7 @@ img {
   .contact-info__title {
     display: block;
     width: 260px;
+    margin: 0 auto;
   }
   .contact-info__list {
     width: 100%;
@@ -3788,7 +3782,7 @@ img {
     top: 0;
     left: 0;
     width: 436px;
-    margin: 0;
+    margin: 0 auto;
   }
   .achievements__list {
     width: 100%;
@@ -3822,6 +3816,7 @@ img {
     top: 0;
     left: 0;
     width: 260px;
+    margin: 0 auto;
   }
   .emotion__message {
     width: 500px;
@@ -3933,12 +3928,8 @@ img {
     margin-bottom: 44px;
   }
   .app-platform__title {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 368px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
   }
   .app-platform__list {
     width: 100%;
@@ -3966,10 +3957,9 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     width: 100%;
     padding: 0;
     margin: 0;

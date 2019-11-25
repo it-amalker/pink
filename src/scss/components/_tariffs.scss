@@ -253,21 +253,13 @@
     height: 44px;
 
     &--yes::before {
-      top: 50%;
-      right: 50%;
-
-      margin-top: -10px;
-      margin-right: -15px;
-
+      top: 13px;
+      right: 60px;
     }
 
     &--no::before {
-      top: 50%;
-      right: 50%;
-
-      margin-top: -13px;
-      margin-right: -13px;
-
+      top: 9px;
+      right: 62px;
     }
   }
 }
@@ -358,19 +350,13 @@
     height: 59px;
 
     &--yes::before {
-      top: 50%;
-      right: 50%;
-
-      margin-top: -10px;
-      margin-right: -15px;
+      top: 22px;
+      right: 101px;
     }
 
     &--no::before {
-      top: 50%;
-      right: 50%;
-
-      margin-top: -13px;
-      margin-right: -13px;
+      top: 16px;
+      right: 103px;
     }
   }
 }
