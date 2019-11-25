@@ -1664,6 +1664,7 @@ img {
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+    width: 100%;
     max-width: 620px;
     padding-bottom: 34px;
     font-size: 18px;
@@ -2940,6 +2941,15 @@ img {
   padding: 0;
   background-color: transparent;
   border: none;
+  /* For  IE-11 support*/
+}
+
+.tools__button:hover .tools__button-icon {
+  fill: rgba(40, 54, 69, 0.5);
+}
+
+.tools__button:hover .tools__button-icon--active {
+  fill: #d22856;
 }
 
 .tools__button-icon {
@@ -2968,7 +2978,7 @@ img {
   fill: rgba(40, 54, 69, 0.5);
 }
 
-.tools__button-icon--active, .tools__button-icon--active:hover {
+.tools__button-icon--active {
   fill: #d22856;
 }
 
@@ -3062,6 +3072,9 @@ img {
     height: 24px;
     padding-left: 3px;
   }
+  .tools__button:hover .tools__button-icon {
+    fill: #d22856;
+  }
   .tools__button-icon {
     fill: #d22856;
   }
@@ -3078,9 +3091,6 @@ img {
     padding-top: 0;
     width: 16px;
     height: 16px;
-  }
-  .tools__button-icon:hover {
-    fill: #d22856;
   }
   .tools__upload-button {
     width: 260px;
@@ -3296,6 +3306,7 @@ img {
 }
 
 .full-name-group {
+  width: 280px;
   margin: 0 auto;
   margin-bottom: 42px;
   padding: 0 20px;
@@ -3517,6 +3528,7 @@ img {
 
 .emotions {
   position: relative;
+  width: 280px;
   margin: 0 auto;
   padding: 72px 0 48px 0;
   border: none;
@@ -3619,6 +3631,7 @@ img {
     font-size: 18px;
   }
   .full-name-group {
+    width: auto;
     margin: 0;
     margin-bottom: 58px;
     padding: 0;
@@ -3734,7 +3747,7 @@ img {
     top: 0;
     right: 0;
     width: 60px;
-    height: 63px;
+    height: 100%;
     background-color: #e5e5e5;
     -webkit-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
@@ -3806,6 +3819,7 @@ img {
     -webkit-order: 4;
     -ms-flex-order: 4;
     order: 4;
+    width: auto;
     margin: 0;
     margin-bottom: 67px;
     padding: 31px 0 51px 0;

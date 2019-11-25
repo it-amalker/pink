@@ -71,6 +71,7 @@
 }
 
 .full-name-group {
+  width: 280px;
   margin: 0 auto;
   margin-bottom: 42px;
   padding: 0 20px;
@@ -361,6 +362,7 @@
 .emotions {
   position: relative;
 
+  width: 280px;
   margin: 0 auto;
   padding: 72px 0 48px 0;
 
@@ -474,6 +476,7 @@
   }
 
   .full-name-group {
+    width: auto;
     margin: 0;
     margin-bottom: 58px;
     padding: 0;
@@ -589,7 +592,7 @@
       right: 0;
 
       width: 60px;
-      height: 63px;
+      height: 100%;
 
       background-color: #e5e5e5;
       border-radius: 0 3px 3px 0;
@@ -676,6 +679,8 @@
     position: relative;
 
     order: 4;
+
+    width: auto;
     margin: 0;
     margin-bottom: 67px;
     padding: 31px 0 51px 0;

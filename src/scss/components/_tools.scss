@@ -28,6 +28,16 @@
   background-color: transparent;
 
   border: none;
+
+  /* For  IE-11 support*/
+
+  &:hover .tools__button-icon {
+    fill: rgba($color-blue, 0.5);
+  }
+
+  &:hover .tools__button-icon--active {
+    fill: $color-pink;
+  }
 }
 
 .tools__button-icon {
@@ -56,8 +66,7 @@
     fill: rgba($color-blue, 0.5);
   }
 
-  &--active,
-  &--active:hover {
+  &--active {
     fill: $color-pink;
   }
 }
@@ -156,6 +165,10 @@
     width: 24px;
     height: 24px;
     padding-left: 3px;
+
+    &:hover .tools__button-icon {
+      fill: $color-pink;
+    }
   }
 
   .tools__button-icon {
@@ -176,10 +189,6 @@
       padding-top: 0;
       width: 16px;
       height: 16px;
-    }
-
-    &:hover {
-      fill: $color-pink;
     }
   }
 
